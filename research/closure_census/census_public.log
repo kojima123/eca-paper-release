@@ -1,0 +1,118 @@
+read 0 E:/arc-agi3-online-specialists-runs-e/adapt_runs/a1/out_canon/benchmark.json 2190
+read 1 E:/arc-agi3-online-specialists-runs-e/adapt_runs/a2/out_canon/benchmark.json 4375
+read 2 E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h1/out_canon/benchmark.json 6188
+read 3 E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h2/out_canon/benchmark.json 8064
+read 4 E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h3/out_canon/benchmark.json 10133
+read 5 E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h4/out_canon/benchmark.json 12002
+read 6 E:/arc-agi3-online-specialists-runs-e/bigboard_runs/b1/out_canon/benchmark.json 14302
+read 7 E:/arc-agi3-online-specialists-runs-e/bigboard_runs/b2/out_canon/benchmark.json 16459
+read 8 E:/arc-agi3-online-specialists-runs-e/cover_runs/k1/out_canon/benchmark.json 17873
+read 9 E:/arc-agi3-online-specialists-runs-e/cover_runs/k2/out_canon/benchmark.json 19154
+read 10 E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/a1/out_canon/benchmark.json 21437
+read 11 E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/a2/out_canon/benchmark.json 23289
+read 12 E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/b1/out_canon/benchmark.json 25386
+read 13 E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/b2/out_canon/benchmark.json 27567
+read 14 E:/arc-agi3-online-specialists-runs-e/effects_runs/e1/out_canon/benchmark.json 29467
+read 15 E:/arc-agi3-online-specialists-runs-e/effects_runs/e2/out_canon/benchmark.json 31486
+read 16 E:/arc-agi3-online-specialists-runs-e/explain2_runs/arm1/out_canon/benchmark.json 33267
+read 17 E:/arc-agi3-online-specialists-runs-e/explain2_runs/ctl1/out_canon/benchmark.json 34960
+read 18 E:/arc-agi3-online-specialists-runs-e/explain2_runs/ctl2/out_canon/benchmark.json 36806
+read 19 E:/arc-agi3-online-specialists-runs-e/explain_runs/arm1/out_canon/benchmark.json 38761
+read 20 E:/arc-agi3-online-specialists-runs-e/explain_runs/arm2/out_canon/benchmark.json 40549
+read 21 E:/arc-agi3-online-specialists-runs-e/explain_runs/ctl1/out_canon/benchmark.json 42450
+read 22 E:/arc-agi3-online-specialists-runs-e/explain_runs/ctl2/out_canon/benchmark.json 44345
+read 23 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f1/out_canon/benchmark.json 46414
+read 24 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f10/out_canon/benchmark.json 48277
+read 25 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f11/out_canon/benchmark.json 50328
+read 26 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f12/out_canon/benchmark.json 52365
+read 27 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f15/out_canon/benchmark.json 54362
+read 28 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f16/out_canon/benchmark.json 56495
+read 29 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f2/out_canon/benchmark.json 58434
+read 30 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f3/out_canon/benchmark.json 60392
+read 31 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f4/out_canon/benchmark.json 62309
+read 32 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f5/out_canon/benchmark.json 64717
+read 33 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f6/out_canon/benchmark.json 66416
+read 34 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f7/out_canon/benchmark.json 68327
+read 35 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f8/out_canon/benchmark.json 70675
+read 36 E:/arc-agi3-online-specialists-runs-e/failnote_runs/f9/out_canon/benchmark.json 72370
+read 37 E:/arc-agi3-online-specialists-runs-e/failnote_runs/r1/out_canon/benchmark.json 74244
+read 38 E:/arc-agi3-online-specialists-runs-e/failnote_runs/r2/out_canon/benchmark.json 75855
+read 39 E:/arc-agi3-online-specialists-runs-e/fixes_runs/x3/out_canon/benchmark.json 77779
+read 40 E:/arc-agi3-online-specialists-runs-e/fixes_runs/x4/out_canon/benchmark.json 79554
+read 41 E:/arc-agi3-online-specialists-runs-e/free_runs/f1/out_canon/benchmark.json 81226
+read 42 E:/arc-agi3-online-specialists-runs-e/free_runs/f2/out_canon/benchmark.json 82893
+read 43 E:/arc-agi3-online-specialists-runs-e/handoff_runs/n1/out_canon/benchmark.json 84746
+read 44 E:/arc-agi3-online-specialists-runs-e/handoff_runs/n2/out_canon/benchmark.json 86666
+read 45 E:/arc-agi3-online-specialists-runs-e/idle2_runs/j1/out_canon/benchmark.json 88725
+read 46 E:/arc-agi3-online-specialists-runs-e/idle2_runs/j2/out_canon/benchmark.json 90850
+read 47 E:/arc-agi3-online-specialists-runs-e/idle_runs/i1/out_canon/benchmark.json 92684
+read 48 E:/arc-agi3-online-specialists-runs-e/idle_runs/i2/out_canon/benchmark.json 94840
+read 49 E:/arc-agi3-online-specialists-runs-e/keystall_runs/k1/out_canon/benchmark.json 96808
+read 50 E:/arc-agi3-online-specialists-runs-e/keystall_runs/k2/out_canon/benchmark.json 98859
+read 51 E:/arc-agi3-online-specialists-runs-e/modeler_runs/m1/out_canon/benchmark.json 100233
+read 52 E:/arc-agi3-online-specialists-runs-e/modeler_runs/m2/out_canon/benchmark.json 101707
+read 53 E:/arc-agi3-online-specialists-runs-e/nowait_runs/n1/out_canon/benchmark.json 104221
+read 54 E:/arc-agi3-online-specialists-runs-e/nowait_runs/n2/out_canon/benchmark.json 106945
+read 55 E:/arc-agi3-online-specialists-runs-e/proven_runs/p1/out_canon/benchmark.json 109245
+read 56 E:/arc-agi3-online-specialists-runs-e/proven_runs/p2/out_canon/benchmark.json 111088
+read 57 E:/arc-agi3-online-specialists-runs-e/sheet_runs/h1/out_canon/benchmark.json 112880
+read 58 E:/arc-agi3-online-specialists-runs-e/sheet_runs/h2/out_canon/benchmark.json 114655
+read 59 E:/arc-agi3-online-specialists-runs-e/stinv_runs/arm1/out_canon/benchmark.json 116375
+read 60 E:/arc-agi3-online-specialists-runs-e/stinv_runs/arm2/out_canon/benchmark.json 118539
+read 61 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/c1/out_canon/benchmark.json 120797
+read 62 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/c2/out_canon/benchmark.json 122575
+read 63 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/d1/out_canon/benchmark.json 124473
+read 64 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/d2/out_canon/benchmark.json 126577
+read 65 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/g1/out_canon/benchmark.json 128449
+read 66 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/g2/out_canon/benchmark.json 130511
+read 67 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/s1/out_canon/benchmark.json 132466
+read 68 E:/arc-agi3-online-specialists-runs-e/stinvg_runs/s2/out_canon/benchmark.json 134432
+read 69 E:/arc-agi3-online-specialists-runs-e/surprise_runs/arm1/out_canon/benchmark.json 136606
+read 70 E:/arc-agi3-online-specialists-runs-e/surprise_runs/arm2/out_canon/benchmark.json 138488
+read 71 E:/arc-agi3-online-specialists-runs-e/sweep_runs/p1/out_canon/benchmark.json 140497
+read 72 E:/arc-agi3-online-specialists-runs-e/sweep_runs/p2/out_canon/benchmark.json 142454
+read 73 E:/arc-agi3-online-specialists-runs-e/t3_runs/t1/out_canon/benchmark.json 144543
+read 74 E:/arc-agi3-online-specialists-runs-e/t3_runs/t2/out_canon/benchmark.json 146012
+read 75 E:/arc-agi3-online-specialists-runs-e/think_runs/arm1/out_canon/benchmark.json 148219
+read 76 E:/arc-agi3-online-specialists-runs-e/think_runs/arm2/out_canon/benchmark.json 150241
+read 77 E:/arc-agi3-online-specialists-runs-e/thinkad_runs/arm1/out_canon/benchmark.json 152422
+read 78 E:/arc-agi3-online-specialists-runs-e/thinkad_runs/arm2/out_canon/benchmark.json 154624
+read 79 E:/arc-agi3-online-specialists-runs-e/thinkan_runs/arm1/out_canon/benchmark.json 156981
+read 80 E:/arc-agi3-online-specialists-runs-e/thinkan_runs/arm2/out_canon/benchmark.json 158957
+read 81 E:/arc-agi3-online-specialists-runs-e/thinkst_runs/arm1/out_canon/benchmark.json 160976
+read 82 E:/arc-agi3-online-specialists-runs-e/thinkst_runs/arm2/out_canon/benchmark.json 163054
+read 83 E:/arc-agi3-online-specialists-runs-e/library_runs/l1/out_canon/benchmark.json 164861
+read 84 E:/arc-agi3-online-specialists-runs-e/library_runs/l2/out_canon/benchmark.json 166726
+read 85 E:/arc-agi3-online-specialists-runs-e/library_runs/l3/out_canon/benchmark.json 168693
+read 86 E:/arc-agi3-online-specialists-runs-e/library_runs/l4/out_canon/benchmark.json 170714
+{
+ "pooled": {
+  "transitions": 170714,
+  "keys": 93794,
+  "repeated_keys": 13300,
+  "broken_keys": 2635,
+  "broken_share": 0.1981,
+  "transitions_on_broken": 9275,
+  "repair_k": {
+   "1": 560,
+   "2": 301,
+   "3": 308,
+   "4": 210,
+   "5": 156,
+   "6": 138,
+   "None": 962
+  },
+  "repaired": 1673,
+  "repaired_supported": 10
+ },
+ "heldout": {
+  "test_on_broken": 1616,
+  "majority_acc": 0.6764,
+  "suffix_answers": 649,
+  "suffix_coverage": 0.4016,
+  "suffix_acc": 0.8367,
+  "majority_acc_same_cases": 0.7442
+ },
+ "errors": 0
+}
+CLOSURE_CENSUS_DONE public

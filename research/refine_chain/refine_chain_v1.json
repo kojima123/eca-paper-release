@@ -1,0 +1,327 @@
+{
+ "m1": {
+  "stops": [
+   {
+    "game": "cn04",
+    "level": 3,
+    "stop_at": 73,
+    "level_actions": [
+     43,
+     103
+    ],
+    "action": "SPACE",
+    "differing_cells": 216,
+    "executed_before_stop": 9,
+    "rewrites": 3,
+    "later_host_rows": 11,
+    "recertified": 1,
+    "stopped_again": 0,
+    "host_completed": 0,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 30
+   },
+   {
+    "game": "dc22",
+    "level": 1,
+    "stop_at": 26,
+    "level_actions": [
+     0,
+     40
+    ],
+    "action": "MOUSE(row=19, col=48)",
+    "differing_cells": 48,
+    "executed_before_stop": 4,
+    "rewrites": 3,
+    "later_host_rows": 3,
+    "recertified": 3,
+    "stopped_again": 2,
+    "host_completed": 1,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 14
+   },
+   {
+    "game": "dc22",
+    "level": 1,
+    "stop_at": 27,
+    "level_actions": [
+     0,
+     40
+    ],
+    "action": "UP",
+    "differing_cells": 4,
+    "executed_before_stop": 1,
+    "rewrites": 3,
+    "later_host_rows": 2,
+    "recertified": 2,
+    "stopped_again": 1,
+    "host_completed": 1,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 13
+   },
+   {
+    "game": "dc22",
+    "level": 1,
+    "stop_at": 38,
+    "level_actions": [
+     0,
+     40
+    ],
+    "action": "RIGHT",
+    "differing_cells": 4,
+    "executed_before_stop": 11,
+    "rewrites": 1,
+    "later_host_rows": 1,
+    "recertified": 1,
+    "stopped_again": 0,
+    "host_completed": 1,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 2
+   },
+   {
+    "game": "dc22",
+    "level": 2,
+    "stop_at": 90,
+    "level_actions": [
+     40,
+     112
+    ],
+    "action": "UP",
+    "differing_cells": 1,
+    "executed_before_stop": 1,
+    "rewrites": 1,
+    "later_host_rows": 2,
+    "recertified": 2,
+    "stopped_again": 1,
+    "host_completed": 1,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 22
+   },
+   {
+    "game": "dc22",
+    "level": 2,
+    "stop_at": 100,
+    "level_actions": [
+     40,
+     112
+    ],
+    "action": "RIGHT",
+    "differing_cells": 4,
+    "executed_before_stop": 10,
+    "rewrites": 1,
+    "later_host_rows": 1,
+    "recertified": 1,
+    "stopped_again": 0,
+    "host_completed": 1,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 12
+   },
+   {
+    "game": "ls20",
+    "level": 2,
+    "stop_at": 93,
+    "level_actions": [
+     58,
+     300
+    ],
+    "action": "UP",
+    "differing_cells": 64,
+    "executed_before_stop": 22,
+    "rewrites": 6,
+    "later_host_rows": 14,
+    "recertified": 1,
+    "stopped_again": 1,
+    "host_completed": 0,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 207
+   },
+   {
+    "game": "ls20",
+    "level": 2,
+    "stop_at": 115,
+    "level_actions": [
+     58,
+     300
+    ],
+    "action": "UP",
+    "differing_cells": 56,
+    "executed_before_stop": 21,
+    "rewrites": 5,
+    "later_host_rows": 13,
+    "recertified": 0,
+    "stopped_again": 0,
+    "host_completed": 0,
+    "level_completed": true,
+    "actions_after_stop_to_completion": 185
+   }
+  ],
+  "planned_levels": {
+   "cn04 L3": [
+    "mismatch",
+    "plan_done"
+   ],
+   "dc22 L1": [
+    "mismatch",
+    "mismatch",
+    "mismatch",
+    "level_completed"
+   ],
+   "dc22 L2": [
+    "mismatch",
+    "mismatch",
+    "level_completed"
+   ],
+   "ls20 L2": [
+    "mismatch",
+    "mismatch"
+   ],
+   "s5i5 L1": [
+    "level_completed"
+   ]
+  },
+  "levels": {
+   "ar25": 6,
+   "bp35": 1,
+   "cn04": 3,
+   "dc22": 4,
+   "ls20": 2,
+   "re86": 4,
+   "s5i5": 2,
+   "tn36": 5
+  }
+ },
+ "m2": {
+  "stops": [
+   {
+    "game": "ls20",
+    "level": 3,
+    "stop_at": 118,
+    "level_actions": [
+     94,
+     null
+    ],
+    "action": "DOWN",
+    "differing_cells": 46,
+    "executed_before_stop": 10,
+    "rewrites": 8,
+    "later_host_rows": 12,
+    "recertified": 5,
+    "stopped_again": 4,
+    "host_completed": 0,
+    "level_completed": false,
+    "actions_after_stop_to_completion": null
+   },
+   {
+    "game": "ls20",
+    "level": 3,
+    "stop_at": 121,
+    "level_actions": [
+     94,
+     null
+    ],
+    "action": "DOWN",
+    "differing_cells": 46,
+    "executed_before_stop": 2,
+    "rewrites": 7,
+    "later_host_rows": 11,
+    "recertified": 4,
+    "stopped_again": 3,
+    "host_completed": 0,
+    "level_completed": false,
+    "actions_after_stop_to_completion": null
+   },
+   {
+    "game": "ls20",
+    "level": 3,
+    "stop_at": 122,
+    "level_actions": [
+     94,
+     null
+    ],
+    "action": "DOWN",
+    "differing_cells": 46,
+    "executed_before_stop": 1,
+    "rewrites": 7,
+    "later_host_rows": 10,
+    "recertified": 3,
+    "stopped_again": 2,
+    "host_completed": 0,
+    "level_completed": false,
+    "actions_after_stop_to_completion": null
+   },
+   {
+    "game": "ls20",
+    "level": 3,
+    "stop_at": 144,
+    "level_actions": [
+     94,
+     null
+    ],
+    "action": "LEFT",
+    "differing_cells": 6,
+    "executed_before_stop": 12,
+    "rewrites": 2,
+    "later_host_rows": 5,
+    "recertified": 2,
+    "stopped_again": 1,
+    "host_completed": 0,
+    "level_completed": false,
+    "actions_after_stop_to_completion": null
+   },
+   {
+    "game": "ls20",
+    "level": 3,
+    "stop_at": 146,
+    "level_actions": [
+     94,
+     null
+    ],
+    "action": "UP",
+    "differing_cells": 6,
+    "executed_before_stop": 1,
+    "rewrites": 2,
+    "later_host_rows": 4,
+    "recertified": 1,
+    "stopped_again": 0,
+    "host_completed": 0,
+    "level_completed": false,
+    "actions_after_stop_to_completion": null
+   }
+  ],
+  "planned_levels": {
+   "dc22 L1": [
+    "level_completed"
+   ],
+   "ls20 L2": [
+    "level_completed"
+   ],
+   "ls20 L3": [
+    "mismatch",
+    "mismatch",
+    "mismatch",
+    "mismatch",
+    "mismatch",
+    "refused"
+   ]
+  },
+  "levels": {
+   "ar25": 7,
+   "bp35": 1,
+   "cn04": 2,
+   "dc22": 4,
+   "ls20": 2,
+   "re86": 5,
+   "s5i5": 1,
+   "tn36": 6
+  }
+ },
+ "pooled": {
+  "stops": 13,
+  "with_rewrite": 13,
+  "recertified": 12,
+  "host_completed_after_stop": 5,
+  "levels_with_stop": 5,
+  "levels_with_stop_completed": 4,
+  "levels_planned_without_stop": 3,
+  "levels_planned_without_stop_completed": 3
+ }
+}

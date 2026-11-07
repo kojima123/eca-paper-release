@@ -1,0 +1,9 @@
+modeler arm verdict (docs/modeler_registration_2026-10-31.md)
+run     lev   score |   sys status hostrow    cnt   step  exact  goal  plan  hruns   hacts  hlvls  refus |   mism  mcver
+m1       27   228.0 |   898    554     182     13     13     10    10     5     12     103      3      0 |      0    230
+m2       28   270.1 |   905    557     167     17     14      8    11     3      8      95      2      0 |      0    228
+ctl1     31   279.1 |     0      0       0     21      0      0     0     0      0       0      0      0 |      0      0
+ctl2     38   405.9 |     0      0       0     21      0      0     0     0      0       0      0      0 |      0      0
+arm pooled: counted levels 30, step retained on 27 (90 %; 34 levels with step at all), exact on 20 of 34 (59 %), plans on 8 of 16 exact+goal levels, host-completed levels 5, host actions 198, searches 91 (2.7 s mean), refusals 0, mismatch stops 0, relief rows 0
+levels at 60 min: arm 55 vs control 69; final_score sum: arm 498.1 vs control 685.0
+VERDICT EXECUTOR_TAKEN HARMFUL

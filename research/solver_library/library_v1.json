@@ -1,0 +1,8851 @@
+{
+ "games": {
+  "ar25-0c556536": [
+   {
+    "level": 1,
+    "start_hash": "9ffe19bf07cf9a55",
+    "actions": [
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "8caeb39c9d8ede90",
+     "85ff1e98947bb5b0",
+     "1d39645f10b51da7",
+     "1aaaf78487d84c24",
+     "0686915ec488c518",
+     "08bee3f953c32929",
+     "625f27bdb3f98f0b",
+     "610cd9a786c69bf1",
+     "f77443263ba195a2",
+     "433783cc1066a04f",
+     "8a53a3ac839e7dd5",
+     "3f0aef4016c9040d",
+     "602ff74076d49b66",
+     "d18d5e7e06e8da6b",
+     "73672a131f087195"
+    ],
+    "n_actions": 15,
+    "n_actions_best_draw": 15,
+    "human_actions": 32,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 12,
+    "model_cost_mean": {
+     "tokens": 5885,
+     "seconds": 4483.2
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "73672a131f087195",
+    "actions": [
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "581243c3c9b56858",
+     "cc0999d80518d2ed",
+     "2a7de0ed5b0bb948",
+     "1829cb439077bdd4",
+     "1deb355ffbd40b0a",
+     "3dde25d08b0373ed",
+     "baa990375dbd5fd7",
+     "bb8a008446761ce3",
+     "65b7475cbb1d497b",
+     "5964f52db882e5c8",
+     "63150521d204080c"
+    ],
+    "n_actions": 11,
+    "n_actions_best_draw": 11,
+    "human_actions": 50,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 4,
+    "model_cost_mean": {
+     "tokens": 19793,
+     "seconds": 9747.1
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "63150521d204080c",
+    "actions": [
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "b7c28b13d94821a4",
+     "0f11ce0c650d6fe0",
+     "ae16875e19dccd31",
+     "cadd4bf5b5c0eec9",
+     "80a38f3c6465515b",
+     "91a04345f259f089",
+     "28099ff58130544f",
+     "8e161fba89b21f40",
+     "dffe23417dfd2dce",
+     "5883d27b65f66e6d",
+     "ce0062a2591b5b8f",
+     "f65244f43946205d",
+     "54d4ac2c0ce62812",
+     "716341d9b072bd39",
+     "3200e5a00970b763",
+     "5781669ffe072b6f",
+     "ee77aa9230dc65af",
+     "13d37dbddf85d23d",
+     "c4c262b177070862",
+     "3bd8fb8c4d524dd5",
+     "d303784089514462",
+     "88522d832eed0e4a",
+     "65995d830c2a59c9",
+     "fef4fd7abb4140ae",
+     "f882e98b69b83d27",
+     "ae4a86367cf74855",
+     "323838a7f744fde5",
+     "e693786400ce5f3a",
+     "36730ee1e35ad90a",
+     "0b2983e5ea154dc2",
+     "7d40d5401d51c308",
+     "985f7147aeb88f6a",
+     "2a23119fe2f4b868",
+     "bf597b4802dcbae8",
+     "2c117443821a851c",
+     "6584d9be832721fc",
+     "039709fadde6f47d",
+     "6c78177d6f329e0d",
+     "8cfed197ba102b12",
+     "474609a021c7ccfe"
+    ],
+    "n_actions": 40,
+    "n_actions_best_draw": 40,
+    "human_actions": 75,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 5,
+    "model_cost_mean": {
+     "tokens": 19900,
+     "seconds": 29077.6
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "474609a021c7ccfe",
+    "actions": [
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "ce05184c8eb36f90",
+     "0907e5ea8170b4e7",
+     "f7f4385286e2b6c7",
+     "92c8ff5f4ff69be8",
+     "3ade12027f7c6b56",
+     "8f1cd01bc027f30f",
+     "463eeb223b20fc6e",
+     "790148c8bc1f0b65",
+     "dd1a2d4348a58bde",
+     "70ca719770ed0d59",
+     "aefb996b124f0ed7",
+     "a6c3432830d2a341",
+     "11799fe8862e54b3",
+     "e4974c821d9ea45e",
+     "4584835fe8370308",
+     "e045237cd5966337",
+     "a34b9e42bdf00477",
+     "8d8119402805bf7e",
+     "1d143ec09f57c7d6",
+     "21ecbbccd4617531",
+     "ac8cf9d7fe01147e",
+     "af92d625715e29d4"
+    ],
+    "n_actions": 22,
+    "n_actions_best_draw": 22,
+    "human_actions": 37,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 83,
+    "model_cost_mean": {
+     "tokens": 38421,
+     "seconds": 8875.2
+    }
+   },
+   {
+    "level": 5,
+    "start_hash": "af92d625715e29d4",
+    "actions": [
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "058c7115055c3573",
+     "e16bbf94c8758612",
+     "c96a83e40efff843",
+     "9a34eb5ec7a904d9",
+     "e8a98a0888dae486",
+     "a9165d581fd045b5",
+     "ecfc2fd56caa9541",
+     "296aaa788e856df6",
+     "4c446e8f09563f31",
+     "90f87b7112adaf89",
+     "796e389405ad6f90",
+     "cdeeec81baebbfdf",
+     "0316565bb0ca758f",
+     "5925c4ae80f0996a",
+     "0147ca289fa9a2e2",
+     "5ae2424db47f1094",
+     "f29bc60a87afaa2f",
+     "931c1a98397c04d5",
+     "ce225274e885bba4",
+     "78fa9a5ea81d0692",
+     "c2a26a47e48ac180",
+     "1eff77d60df11298",
+     "898ecd81cca49bba",
+     "41b5ac821ab908d0",
+     "ddd82cf575b391ae",
+     "8aea5ca2e05068f6",
+     "4174eb6ea5cf4a3d",
+     "192efcb6a69f02ba"
+    ],
+    "n_actions": 28,
+    "n_actions_best_draw": 28,
+    "human_actions": 89,
+    "draws_cleared": 82,
+    "draws_cleared_by_model": 82,
+    "model_cost_mean": {
+     "tokens": 33726,
+     "seconds": 39179.8
+    }
+   },
+   {
+    "level": 6,
+    "start_hash": "192efcb6a69f02ba",
+    "actions": [
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "04861137c7dddf60",
+     "3e2f241a7253531f",
+     "5522a713fe7cfee6",
+     "a5046c0ed684dff0",
+     "a394ce4563e4627c",
+     "0f77e13d5e784719",
+     "9235ebaa34456ce0",
+     "f26f204255222046",
+     "6f465eedbe25a611",
+     "dbfe4e009965dc94",
+     "73f5d31f134bef22",
+     "0aff926b228abbca",
+     "aa3401cb573a36b9",
+     "d7d9d940a57ed47b",
+     "aeb230352f3a5f9d",
+     "5c244a3876ec66b8",
+     "a3de83da63e0b7d4",
+     "3258e6ba9e7c326f",
+     "f3e6079ef3ef6496",
+     "db9e02672355c6da",
+     "bc2e3f25fbfdafbe",
+     "11c13bd1daf6dd75",
+     "2fad8ac675c73b97",
+     "d16eba0cd4a39bfa",
+     "5f4211f5c4408ced",
+     "6d2c0c328de128a7",
+     "eaddd7150f50e667",
+     "f92a51d3f23994f7",
+     "c5f623bb7d15d8bc",
+     "ad77f9682c66398f",
+     "da0b3bb56f4f191a",
+     "baf9b0d9712d8c52",
+     "522e2408f4117cc1",
+     "24c68f2e96cfe513",
+     "b91ea6ed28e34f44",
+     "81e6625b7adba701",
+     "0c3e32e32ebfd30a",
+     "f821a12ab08eda93",
+     "48add6fedfd7704c",
+     "bec294dcaa4c0c67",
+     "611c6c68da08f36f",
+     "e1f0487a7b0ea132",
+     "d92988915cfdccdd",
+     "7e15e428ad01555a",
+     "929a7eb336c2b01a",
+     "c73ae29341d4a58a",
+     "df5ef15d3ee8b307",
+     "73709e91ade9b57f",
+     "365cc234fc0ac0b8",
+     "f31a13b88a33b5f0",
+     "0eea27f7030048a4",
+     "a0f7963388a9d24f",
+     "f33bbfce91e95c4d"
+    ],
+    "n_actions": 53,
+    "n_actions_best_draw": 53,
+    "human_actions": 159,
+    "draws_cleared": 79,
+    "draws_cleared_by_model": 79,
+    "model_cost_mean": {
+     "tokens": 40659,
+     "seconds": 108130.3
+    }
+   },
+   {
+    "level": 7,
+    "start_hash": "f33bbfce91e95c4d",
+    "actions": [
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 51
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "214fa4528f632774",
+     "1afb4f63d5390803",
+     "7018581de1da1da8",
+     "f9731d999bfdb17e",
+     "ad70f810c6f28bb6",
+     "6dd5f9b6c45e3425",
+     "d7cfab74120f0d02",
+     "b1e9c65508a31137",
+     "3c8897a5eb0a8f43",
+     "a694db72ae204249",
+     "6d4fb9edb2842c1a",
+     "dbd57b3b50d865d8",
+     "746813423f5c9b81",
+     "9652565dc9455c8a",
+     "a6d95a25041e960c",
+     "ea2e97b714b3e072",
+     "98877bf38bc06a05",
+     "b19beb259577bd4e",
+     "3305473bdf0a8fd7",
+     "589d4df3ca8303dc",
+     "d54690b05e8ac797",
+     "4fe45b4d20f161d6",
+     "522e3d643400bcaf",
+     "73542db865385df1",
+     "b2e8fe77fab86c97",
+     "ca9d8c917ed428b7",
+     "596dc8431737cada",
+     "71ea0a85ffbc4a08",
+     "bf082c2d80bd5624",
+     "6c49c90967f3ec93",
+     "5f2fc2dfea6323e9",
+     "88339f075d231a2b",
+     "17a9aac737f2f4b2",
+     "ba2e4f92cf50d734",
+     "3d85daee5c9c564d",
+     "51c6cb915ecb2f73",
+     "e7b318ef5e92f490"
+    ],
+    "n_actions": 37,
+    "n_actions_best_draw": 37,
+    "human_actions": 233,
+    "draws_cleared": 68,
+    "draws_cleared_by_model": 68,
+    "model_cost_mean": {
+     "tokens": 30712,
+     "seconds": 90772.6
+    }
+   },
+   {
+    "level": 8,
+    "start_hash": "e7b318ef5e92f490",
+    "actions": [
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 10,
+       "y": 40
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 25,
+       "y": 22
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 40,
+       "y": 40
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "003d34fa34b73ddd",
+     "c6a4e2f39a16e02e",
+     "635009a73f016f36",
+     "4f5ad021d0c08e0d",
+     "5ebed2ce6b7f77a8",
+     "8feae217d87e4183",
+     "7dcd9e2af2a82970",
+     "b5f8ea8f5bbbad2d",
+     "8215de578d592c28",
+     "14c9374d03292573",
+     "73e38da9bb671f9b",
+     "9ac71f9fe31efb47",
+     "30b9183ae7226dff",
+     "88a83ecdd5f9f460",
+     "2085ff9ad686c120",
+     "4312f3438fc75b12",
+     "8069aeec4d6f2657",
+     "2c97b1f9837c39f9",
+     "c0d717365cd807cf",
+     "3d2c3ff4103c5066",
+     "b7ad1c0642dc0572",
+     "365df9a0795736a4",
+     "fbb651d61c167fb8",
+     "4a242ead3a2b0e72",
+     "dd3266c04b8b219c",
+     "b42d2589cae4f701",
+     "4b15b412a4d4c088",
+     "c4ff8f4cdee72712",
+     "c19b6b1e05efa89e",
+     "20e1d344246d6775",
+     "5936c4333de5581e",
+     "1af6d1e40037d18d",
+     "efb9373951de525c",
+     "415faa97e5cd0025",
+     "a2cc978c9b6fadb6",
+     "81d188070a691eea",
+     "68fdb1ce3890bade",
+     "6701e526b9ac4d40",
+     "603e1fc545ec3698",
+     "44c40f2513fc4bb6",
+     "0cda9e0223d63951",
+     "3fc9f61b823533c0",
+     "4a9a74c9ca09a09c",
+     "b3a3af6972f04cb3",
+     "ced084318e93301f",
+     "2ea6e486b4794d85",
+     "0865b23ddd79ebaa"
+    ],
+    "n_actions": 47,
+    "n_actions_best_draw": 47,
+    "human_actions": 73,
+    "draws_cleared": 64,
+    "draws_cleared_by_model": 64,
+    "model_cost_mean": {
+     "tokens": 13086,
+     "seconds": 117706.7
+    }
+   }
+  ],
+  "bp35-0a0ad940": [
+   {
+    "level": 1,
+    "start_hash": "927944f1adeb11c3",
+    "actions": [
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 32
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "7bb64da56a30e027",
+     "1c796e060ef9ad50",
+     "60588922dfccb374",
+     "b41e7b72f1cb868c",
+     "5121e446e2db17d6",
+     "b5be5fd0a0df5204",
+     "05bdc4b617c20670",
+     "d9853f4d2c141dde",
+     "161e3907ed8bee8c",
+     "9dfdb63fecb7b5c4",
+     "7296b72b1c4c92f8",
+     "317f8e548f274348",
+     "16aa16a0f353cde3",
+     "8e5c69a94dc1fb0c",
+     "c689a306670663fa"
+    ],
+    "n_actions": 15,
+    "n_actions_best_draw": 15,
+    "human_actions": 21,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 83,
+    "model_cost_mean": {
+     "tokens": 53385,
+     "seconds": 15592.9
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "c689a306670663fa",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 27
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "cdde1a2c654b9b0e",
+     "6aa7f2eaec20554d",
+     "c959990f266a3b77",
+     "6e348f91df252fb6",
+     "559bd819edd44a69",
+     "34a1d1f022625e08",
+     "3ee3826c8b4c8a9f",
+     "396af428fd9e33f1",
+     "c4b494b9cc773e7a",
+     "c8ee2229a66573ab",
+     "42874960a89ae88a",
+     "5c8daba69627e833",
+     "68d2a47d1c50af97",
+     "5e6293ae5df53dcf",
+     "d2cc7f4e22d7ae1d",
+     "c36f2174cb91892f",
+     "8e63d0156af3277d",
+     "fde7c849720ead7d",
+     "87f428dd02bfe98b",
+     "b22e9131adc68176",
+     "2c8c86eddbec899e",
+     "71f90248cb2daca5",
+     "161eda7645bf6459",
+     "57dff8eb8c2ac902",
+     "9df19b7c31e02825",
+     "3a52096ee124bfe9",
+     "dd1c25c02416155e",
+     "82988238f9c37ea9",
+     "64dae437578cacc7",
+     "34d83d547cc2862c",
+     "22b5cd3f09c22f1b",
+     "a0e3f89b4a741210",
+     "16fd506f5675835c",
+     "dcf1d2f5fc8cd097",
+     "827ef675ec3bf833",
+     "0816c3204071d0d9",
+     "84acb76fa5e85855",
+     "f237313a1de0d852",
+     "36b6fd26f6fcc8d9",
+     "7133abb48e659b4d"
+    ],
+    "n_actions": 40,
+    "n_actions_best_draw": 40,
+    "human_actions": 48,
+    "draws_cleared": 40,
+    "draws_cleared_by_model": 40,
+    "model_cost_mean": {
+     "tokens": 128341,
+     "seconds": 132864.6
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "7133abb48e659b4d",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "c951d9c183849290",
+     "7427c190537d0bb8",
+     "0712d10b51bafa46",
+     "d0b6bc1be0ea6fca",
+     "a9d66acc965d4899",
+     "0427ea0e328c1821",
+     "1c0bfded28d3059d",
+     "9401919f829339cb",
+     "5b47ae0ae069c3c7",
+     "5db7fa3c582a3e50",
+     "56b89e090d93ca55",
+     "97a0926f3c345b3a",
+     "40925349733c9b8d",
+     "69c75e62c6381704",
+     "17b74dc38553ac8e",
+     "420a8e62138f6a96",
+     "3b5fb98dfe8d251d",
+     "2e85872fc4d2182a",
+     "cca07e654d2e7a25",
+     "42e954e769211484",
+     "0f7532d700088b32",
+     "be59bab10e13808a",
+     "4c36e9d34414dac5",
+     "c9bfd1a9a4ba8d14",
+     "c2d0d0dd02efbb24",
+     "6ef0879e04f21dbd",
+     "4351f446b7b45bf5",
+     "4c8a15c6ab54348c",
+     "fcf1213a1ec6e052",
+     "4be41368c45d6a3f",
+     "3e0a02ad66620e92",
+     "6e9647ee010bf176",
+     "e806282a0371c0a7",
+     "1a49e27cdef57064"
+    ],
+    "n_actions": 34,
+    "n_actions_best_draw": 34,
+    "human_actions": 44,
+    "draws_cleared": 6,
+    "draws_cleared_by_model": 6,
+    "model_cost_mean": {
+     "tokens": 73152,
+     "seconds": 144745.4
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "1a49e27cdef57064",
+    "actions": [
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 3
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 21,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 41
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "c7860948479fa3b6",
+     "04990390f522a406",
+     "b3d60731333c0c02",
+     "2ecdede8e17e63d2",
+     "30664e10421c1e38",
+     "59a4d1c6b5921287",
+     "d2927fd4f2b9396b",
+     "54045cab9dbdc231",
+     "352b61c0cecf037f",
+     "e6e6e108afe15a97",
+     "8197aa7f5b76bb0a",
+     "1cffea9605980f6d",
+     "9613f012aed7d518",
+     "141bb31b1fbd5186",
+     "05b8f35a1058a915",
+     "afd35d6087f6bbd0",
+     "443dd29fe5922e7a",
+     "f00028ac0cb7ba01",
+     "9eb9e9aede39a522",
+     "72a3a9594a110863",
+     "8307bf349969e61c",
+     "e1c6450fed242ab3",
+     "958d730bda1fe6ce"
+    ],
+    "n_actions": 23,
+    "n_actions_best_draw": 23,
+    "human_actions": 38,
+    "draws_cleared": 1,
+    "draws_cleared_by_model": 1,
+    "model_cost_mean": {
+     "tokens": 35990,
+     "seconds": 71354.9
+    }
+   }
+  ],
+  "cn04-2fe56bfb": [
+   {
+    "level": 1,
+    "start_hash": "d4644acc8ed3e1c8",
+    "actions": [
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "1021c7c85558d8de",
+     "8209fdee36b5c14c",
+     "fd08a737ae23acce",
+     "dc73ee1589c69db2",
+     "1ab87cc2bbf9dfe2",
+     "b95bacd3a3352d8a",
+     "32f51264e70267f5",
+     "c6a7baf5f907519f",
+     "e4d0ef8ab54655bb",
+     "02aa7fc44335c376",
+     "3775f35c32f1e217",
+     "92c439fe8a063e32",
+     "ee9872f2a3948b50",
+     "216f0f8a0d084111"
+    ],
+    "n_actions": 14,
+    "n_actions_best_draw": 14,
+    "human_actions": 29,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 13,
+    "model_cost_mean": {
+     "tokens": 16599,
+     "seconds": 4974.8
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "216f0f8a0d084111",
+    "actions": [
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 50,
+       "y": 26
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 50
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "d2450bf40ca99f9f",
+     "2a0309650d6d72d5",
+     "203a399e631fe196",
+     "b42e1fd8529154b8",
+     "6d6fc1ef28d6267a",
+     "ef85add7d16b585c",
+     "58ec9bb758ac95b0",
+     "d6c35770211a6bf6",
+     "59c03f1d8516de4a",
+     "620aa7d7cb2da631",
+     "513d525b05211c37",
+     "15b6d958bf824d0e",
+     "ee3f1825a2855530",
+     "beaf225ed0b4afe5",
+     "e084c8f7f722cd1f",
+     "1d957d39ae2076e3",
+     "3cbfc4c3f86ab952",
+     "345a8a38d8f43461",
+     "046c26f7dda215d5",
+     "d495f4055bfa3252",
+     "d6454b16e7860ac2",
+     "0ccaa2de433c1ffe",
+     "daddf97c21251ee1",
+     "3bbfe53af2c1e114",
+     "03cdb40a8ef422ad",
+     "9898e69e7f7422d6",
+     "40ee5227928010a2",
+     "2e0c802d43b96e74",
+     "b78f9a12f3454c74"
+    ],
+    "n_actions": 29,
+    "n_actions_best_draw": 29,
+    "human_actions": 54,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 4,
+    "model_cost_mean": {
+     "tokens": 95757,
+     "seconds": 74764.6
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "b78f9a12f3454c74",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 41,
+       "y": 14
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 35,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 41,
+       "y": 14
+      }
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "97ff2ff9181223d8",
+     "8916f4117c4b841d",
+     "848cf789875e6baa",
+     "500974a297ab112a",
+     "f2f35099495df48a",
+     "c7d5f881611e2cda",
+     "b0ae14263863f15c",
+     "31623c6584c4811a",
+     "8d1844fccd0aacb1",
+     "dbfc74c5239b7a9b",
+     "603381ee18d9566b",
+     "38ec14eef0816d16",
+     "bdb590f7183ce4b1",
+     "c303612eb158c85a",
+     "2658cc85c1d47ab1",
+     "f0dfaab31a5d482d",
+     "f3c687b001452f6e",
+     "46e7dae77efb18bf",
+     "b3e64efd4dcef14e",
+     "9d69e93cdc60a123",
+     "e4273d3f57c5d2bd",
+     "c1d41b9f340a7590",
+     "ce9bd79f116daa8e",
+     "205567815fc06ebf"
+    ],
+    "n_actions": 24,
+    "n_actions_best_draw": 24,
+    "human_actions": 85,
+    "draws_cleared": 61,
+    "draws_cleared_by_model": 58,
+    "model_cost_mean": {
+     "tokens": 130414,
+     "seconds": 79412.3
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "205567815fc06ebf",
+    "actions": [
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 23
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 20,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 47,
+       "y": 50
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "5a0aba9117620cf8",
+     "d51d590244c63bcf",
+     "d336fef49e643598",
+     "d1c70a3a64d61b84",
+     "28ee97714c6ae9bd",
+     "f60f09009fca91ef",
+     "295fd1839fec6299",
+     "3a6bbbfee4fb4052",
+     "cba72bc60d2701cb",
+     "1abe5762ea8de946",
+     "4d4eddbe0ab127cc",
+     "3e8f85c091f2e167",
+     "2ccf08c8df192d54",
+     "223ac6d0f28cf582",
+     "6cc69bab8eedabb8",
+     "9d679d23f61843b3",
+     "5e28b6ba8d73abd1",
+     "8980bd902ccc5b00",
+     "1490fbffa252fd8d",
+     "81d4a10f1939b6d3",
+     "7a8cad7c74564e50",
+     "3931ff7b19e4c7e3",
+     "e8395e9603bf2b7d",
+     "1fbd2895cce8044a",
+     "0371094714b2b744",
+     "45e019bb870395ed",
+     "cd843722aea9eaa7",
+     "f1248779c3804d35",
+     "e3dd729a49d5a224"
+    ],
+    "n_actions": 29,
+    "n_actions_best_draw": 29,
+    "human_actions": 300,
+    "draws_cleared": 50,
+    "draws_cleared_by_model": 47,
+    "model_cost_mean": {
+     "tokens": 36355,
+     "seconds": 93420.9
+    }
+   },
+   {
+    "level": 5,
+    "start_hash": "e3dd729a49d5a224",
+    "actions": [
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 11,
+       "y": 38
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 5
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 50
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "2081e68397505153",
+     "63dcee03b6521755",
+     "4c2c0e0c4e8a1f79",
+     "7e94bf593f8c4fb0",
+     "dbcb3b5dfb1105d2",
+     "ab32863cf15e71f9",
+     "e20684f3e3089d01",
+     "bed6606f894fbc5b",
+     "a515843abd5d0c4d",
+     "dbf6777feefb081b",
+     "d207668d5e06a0f3",
+     "7c72809b142596c7",
+     "b4c5a15a82eebd63",
+     "6792dc61a5a0ffd6",
+     "8ee8896904ad2601",
+     "464929620a0fdaa8",
+     "58cf9ca20dfde7da",
+     "11e69eb331408206",
+     "59e30863dc0445a5",
+     "ec6a4760be0b3ebd",
+     "6d3c69460b2352f3",
+     "a67c5a00e400404c",
+     "091346d960ba6b45",
+     "4d084d467853dffb",
+     "29449b738c4f6991",
+     "f3b096667af6230b",
+     "4ad182fd1e9c91ca",
+     "405754d5a15e9a55",
+     "587c396784e78f3c",
+     "6d3881e34a140a37",
+     "9c997d12ad1f3712",
+     "39e32198c0bd1995",
+     "e1d6cca60eaf8120",
+     "9aa08a5431f857d1",
+     "7edeedb7a0da3305",
+     "1a4d13dfbe73952a",
+     "677e88510e7070aa",
+     "551913a7cc7fc301",
+     "1005a84ae92a5754",
+     "59a789234666142f",
+     "48abe5d0dd82f0f9",
+     "4d29732539835c0b",
+     "8beaed31dc0076bc",
+     "8f910e002e72adf4"
+    ],
+    "n_actions": 44,
+    "n_actions_best_draw": 44,
+    "human_actions": 208,
+    "draws_cleared": 19,
+    "draws_cleared_by_model": 17,
+    "model_cost_mean": {
+     "tokens": 59866,
+     "seconds": 180322.5
+    }
+   },
+   {
+    "level": 6,
+    "start_hash": "8f910e002e72adf4",
+    "actions": [
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 26,
+       "y": 20
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 8,
+       "y": 53
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 5
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 50
+      }
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "b454a8db5680ffe3",
+     "7f59d9ed4104d912",
+     "6330b1ff5e05aabd",
+     "24be366d1392eec0",
+     "f48a386bb90c970b",
+     "8bba62458fbd707b",
+     "0e01c74d5f9db682",
+     "5cec484bc5b9b972",
+     "db20a0d0b057ec24",
+     "6a16be3183f0bc8c",
+     "11c8c7123e9eb24b",
+     "6920d0aef3a0e29a",
+     "2fe91d9e4030f08f",
+     "49eac1fec192247b",
+     "70958297a626eaab",
+     "c5402084712f68d8",
+     "3e78f4475c6fcc3c",
+     "c598305be0a50b96",
+     "1214f40fbab64642",
+     "08ebaa07919b3cf5",
+     "86138d5e95fdf22e",
+     "0053216f421dc156",
+     "15d970becb116392",
+     "cccaff0feda3588a",
+     "1f6385fd09b8899a",
+     "d9d0821dcc763d3e",
+     "80f33930ecd359e2",
+     "cdbb14349ac78efe",
+     "d8f89f9d54347891",
+     "c60f426cd7ead78f",
+     "554d1ec35635e204",
+     "c9038504e069deb8",
+     "a5259f493bb4871b",
+     "330d3f49edf996c6",
+     "055614796e915ed9",
+     "a2e9ac911873219a",
+     "1337f069b978db01",
+     "fd599970e43977e6"
+    ],
+    "n_actions": 38,
+    "n_actions_best_draw": 38,
+    "human_actions": 113,
+    "draws_cleared": 7,
+    "draws_cleared_by_model": 5,
+    "model_cost_mean": {
+     "tokens": 32742,
+     "seconds": 170750.8
+    }
+   }
+  ],
+  "dc22-fdcac232": [
+   {
+    "level": 1,
+    "start_hash": "4956f0c64481dc4e",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 19
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "00edc4365b63d6c2",
+     "002c406804ed6749",
+     "31561046ee30a202",
+     "b7bb6eba5cfc6b63",
+     "1d61c1a95f09f0f9",
+     "cd86bba941f9349c",
+     "026d7da2c5f14d8b",
+     "17b4f13ffb627607",
+     "b144ffb0059bc0aa",
+     "d0b876e9d90315aa",
+     "3c5613d1cb536c7e",
+     "34887ba29eb0c85c",
+     "6e83dae525bddea0",
+     "8dd855e28baa6d05",
+     "5ae4ad3d98904401",
+     "262e0e5a1bdcdc4b",
+     "99ac66e7955b179b",
+     "cef17d2157f01fb4",
+     "fc33debe1a31c1c9",
+     "0703bafb73d65773"
+    ],
+    "n_actions": 20,
+    "n_actions_best_draw": 20,
+    "human_actions": 59,
+    "draws_cleared": 82,
+    "draws_cleared_by_model": 82,
+    "model_cost_mean": {
+     "tokens": 48445,
+     "seconds": 40772.7
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "0703bafb73d65773",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 52,
+       "y": 22
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 52,
+       "y": 40
+      }
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 52,
+       "y": 22
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 52,
+       "y": 22
+      }
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 52,
+       "y": 31
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "e6361cfe7cb22984",
+     "7a1110f745ea1530",
+     "4937f193c1d89f5c",
+     "310dbf98e1cbf0cd",
+     "43280ca568aaab8e",
+     "66a9711758d50284",
+     "24cce100a23d11b6",
+     "ad19191eaaf8d441",
+     "50e4c798813cf5d5",
+     "6c569ad77b9eecad",
+     "b5918bc46f128488",
+     "f05dc47a43693150",
+     "429271a761b44984",
+     "49500ef6e3824325",
+     "bb81322082f607fe",
+     "e187725ea0e0ffd2",
+     "aae4a3c45e6ae31c",
+     "34f6b970656c751b",
+     "3788ee8b75f2e25f",
+     "1e8b4583d9c2643f",
+     "d39880f26fe9c06f",
+     "93f81445413f2ef2",
+     "5aacbaa29e929b1a",
+     "21d86fd69af663dc",
+     "8d0b731efe0a656a",
+     "e6c64fcda9a502c6",
+     "8f3cfb079a40fd2d",
+     "c384ea5b28ed2c0d",
+     "e6daecff77659353",
+     "9d19e0d7ab8fe10a",
+     "d00cafaa8520111b",
+     "0b692e9bdf5b86c5",
+     "c5bd42c077207e3b",
+     "410b17ff796cdbb7",
+     "55d9f78409828217",
+     "2245462cb005a867",
+     "ae5c7e66d4be0560",
+     "e80f0ca5f27c3fbf",
+     "ed9d0d290ee8f96f",
+     "2a78f258150309b4",
+     "340e245c9367967d",
+     "a7fc46d3c5052f71",
+     "e9f50ba8cb373d04",
+     "900fbb95e2a7804b"
+    ],
+    "n_actions": 44,
+    "n_actions_best_draw": 44,
+    "human_actions": 102,
+    "draws_cleared": 82,
+    "draws_cleared_by_model": 82,
+    "model_cost_mean": {
+     "tokens": 33296,
+     "seconds": 78431.0
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "900fbb95e2a7804b",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 27
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 18
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 17,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 27
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 27
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 18
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 27
+      }
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 27
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 45
+      }
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 18
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "f4b42a2bd264ff15",
+     "b7499d5ced15f73d",
+     "5607631cab27e956",
+     "ec205f27419089bf",
+     "b0d31fdef028be35",
+     "50c7ea8c3f1f6a78",
+     "22edee21d86e71fc",
+     "b9895545f48e8f50",
+     "4af1ba7af51470e7",
+     "f77f4e4073b4f61e",
+     "2d5dd2ee5283b642",
+     "8b48b2795802241b",
+     "ce695a7fa55a4967",
+     "d3519b5342ca24fd",
+     "8703b88ea95c7b23",
+     "70a2cbd39879d535",
+     "6a42fb6cb5b110c3",
+     "ebc3288e1ebbcc2d",
+     "5110fd39b798b47a",
+     "88533464c9f6d59e",
+     "ff8aa71c196f5992",
+     "e4c758d4f8e0a40c",
+     "615fef1e813b8329",
+     "581d9d1e51a16fdf",
+     "eb6099734c1c6831",
+     "432a3674514af6ce",
+     "dcb3cc1091580166",
+     "62dc21262a005fe2",
+     "744a42df9c7cf805",
+     "61ceb9d4938c4576",
+     "f2c39e5507787c05",
+     "395c6a35530fc14e",
+     "7c9c7b0e276f94bf",
+     "6627540f33c5c396",
+     "00090697c5b6ab2b",
+     "f63142ce7a94aa7c",
+     "d8de94a84fee11ce",
+     "c71235e792398566",
+     "22bc39131e69df89",
+     "41e6397515a1f9ce",
+     "38328fbec1681b26",
+     "ef647548dc030c17",
+     "19ad90a6030560d5",
+     "a291f69d2bd3b579",
+     "0417c2110f219e07",
+     "e1df2833d0f1de9c",
+     "11cb66f767782ca9",
+     "bd1398c4863713ea",
+     "345f3938aced25e4",
+     "abccb94eef2a5cc8"
+    ],
+    "n_actions": 50,
+    "n_actions_best_draw": 50,
+    "human_actions": 67,
+    "draws_cleared": 77,
+    "draws_cleared_by_model": 77,
+    "model_cost_mean": {
+     "tokens": 56508,
+     "seconds": 141377.1
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "abccb94eef2a5cc8",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 52,
+       "y": 19
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 56,
+       "y": 28
+      }
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "d7c8f418aaa0f5b3",
+     "1374d65a471d102d",
+     "c6c46cb6bc0fb17d",
+     "8ca4beda8e6ac7ff",
+     "985eda8b15c030db",
+     "b21c90be8a87e76a",
+     "061ca4db041f8bb3",
+     "845e785e0dae4d60",
+     "aa7df7b85e0ad12c",
+     "2dcc83a7e9992d08",
+     "c67e6a32389e8665",
+     "e28ba50f1759202a",
+     "2f0ef791b3f1d8fb",
+     "80de117de86e4ef1",
+     "015daa2f949c4c45",
+     "5b298d9844533e3a",
+     "14c7f78975f13a93",
+     "024cc8fe78586fb8",
+     "494476966d293856",
+     "77e6348aa118e508",
+     "590ece462b990ff5",
+     "8363502e50e94f51",
+     "d891a2f2e4d98174",
+     "091684298dfeb7bf",
+     "25dd02d94d9272fd",
+     "cce4e3aeb27b6f38",
+     "255b7ce71162e30b",
+     "d7aa7c323ef7911c",
+     "4f9d082f307555c3",
+     "fc4a86c86e8d4eaf",
+     "4e584a3d4bf1a79f",
+     "244a5ca8af406812",
+     "1b185ea4e09dbb68",
+     "5ef5d824fc96608a",
+     "bc5a8e782f0cc73a",
+     "5122cc8837dda76f",
+     "26c7a585518ca2e0",
+     "e3764e8f0da0ebfa",
+     "48a95114c28e48c0",
+     "83dba8955bb774e2",
+     "0d807c95b51a047f",
+     "5d14a8ecb75ae40b",
+     "b913bd24deb8ac91",
+     "f1596fd6f4d1e4d7",
+     "a25e62690259d964",
+     "91bb2c6392758c4c",
+     "41f09f22845c7981",
+     "bb7568d83c15f83d",
+     "5550728352a23bfd",
+     "280a74e3a7d92d64",
+     "24e7f8fc2547d844",
+     "2f2a793cc845550b",
+     "f2e1938ad992df23",
+     "c095d64a418fdebc",
+     "c814e2105e9cac1d",
+     "bce5da37bf75feb0",
+     "63923bf398f7b80c",
+     "28712b19a65677f9",
+     "822a826cf9654876",
+     "e5349e1cfac16c11",
+     "1af34fee28fbd1ba",
+     "257d1d4abf79e699"
+    ],
+    "n_actions": 62,
+    "n_actions_best_draw": 62,
+    "human_actions": 98,
+    "draws_cleared": 59,
+    "draws_cleared_by_model": 59,
+    "model_cost_mean": {
+     "tokens": 59955,
+     "seconds": 267380.9
+    }
+   }
+  ],
+  "ls20-9607627b": [
+   {
+    "level": 1,
+    "start_hash": "9efa1937d502dcfe",
+    "actions": [
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "c2f227168901cf23",
+     "f157d12226d834a6",
+     "397f958af2a04b5b",
+     "c94c74578dfb868b",
+     "f1e087c1c93a60c3",
+     "b078ee8a89f1c655",
+     "fab4fe90330f67c5",
+     "95c19591b3e8d547",
+     "accd6de5236e1bcb",
+     "100cd9fe4b786a63",
+     "35c9dfcf43b1337e",
+     "ab37bce9489a721d",
+     "522ebd70f1efe276"
+    ],
+    "n_actions": 13,
+    "n_actions_best_draw": 13,
+    "human_actions": 22,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 83,
+    "model_cost_mean": {
+     "tokens": 32016,
+     "seconds": 14246.2
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "522ebd70f1efe276",
+    "actions": [
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "258d107162fd6c1a",
+     "6f48f1496facd35e",
+     "5b4e0866671576f8",
+     "3e3c4795d8afc889",
+     "89a4af7fe27d8892",
+     "6d6176978569170e",
+     "50cca37cdbccac42",
+     "89750bf8caa9b4cc",
+     "4f44648911dc8a95",
+     "7e0d70d3f79c6436",
+     "e5ce42b40c7c7508",
+     "eace11ad44ff9d3a",
+     "e16f3e3f357edb81",
+     "2c7c5b39fb90eb53",
+     "28358d4df583493d",
+     "ab74c2adc7cf4c63",
+     "418597d328f659df",
+     "bfe56489b2b2f133",
+     "b6ddf8b129c34325",
+     "cdec59de50d630b6",
+     "94d37f9399675faf",
+     "9f92e6a08caaa9e2",
+     "9e1e81e6ec94db14",
+     "54203ab57841858a",
+     "12372f44d1dc11d0",
+     "7e73e7b7ce09d0d5",
+     "ccdcfaae55e51e9e",
+     "88ba6164176aaee0",
+     "9632d6bef56e930b",
+     "a5733d77025b14e0",
+     "7d6fa42bf3d74648",
+     "733e0f04ce81dec6",
+     "db4b17c1a1f400fa",
+     "f4970903572292a4",
+     "21f67969d488e976",
+     "5e03ca6b1abf584c",
+     "d04d68af4b74a41c",
+     "ba88be7a44e35c26",
+     "c3e5b32e7d0c59e0",
+     "2ded73fad59bba13",
+     "17a6117a4945344e",
+     "7ec1ff61b2cd705e",
+     "a22c8728e24de685",
+     "9c31a8ff5296938b",
+     "ffd25880412e180d"
+    ],
+    "n_actions": 45,
+    "n_actions_best_draw": 45,
+    "human_actions": 123,
+    "draws_cleared": 81,
+    "draws_cleared_by_model": 81,
+    "model_cost_mean": {
+     "tokens": 68259,
+     "seconds": 175026.8
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "ffd25880412e180d",
+    "actions": [
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "185d7c4e05d1b604",
+     "d012472f07df4e79",
+     "a23a1ac26766a0c9",
+     "e9a281d2112daa8d",
+     "8bf0cf45e15b0c0a",
+     "e5ed71de7aa66492",
+     "35ac3861370ec9e7",
+     "ecaa2aae046402a4",
+     "a43f6af9fc319a44",
+     "c6550f011f75467f",
+     "d384e93e38e9850a",
+     "944f13175bcdeb78",
+     "3ccb67c8c4d1765f",
+     "a287bc7ea65a3fcf",
+     "cc05af8fcd30826d",
+     "c05957ec5cdb90e9",
+     "cef93b4610251fe7",
+     "33573f5a0af0a069",
+     "f93a0ff7292534e3",
+     "5c4e849407018d54",
+     "e860b20681d37cc3",
+     "d259a0d7c0366391",
+     "e00ac21da17a8144",
+     "77470c09940e7d95",
+     "ddab184d916f24bc",
+     "508cd2331e89a30b",
+     "98dd08e2a1776649",
+     "d5b52bceaa44451a",
+     "5024f69355ee6f81",
+     "913ae59e6e355840",
+     "7dfb31334b390cef",
+     "66168b2c86bb0413",
+     "d68e34075901528c",
+     "0e2cd2febd1fb9ca",
+     "e69e9e729cb4a6ec",
+     "d2cc2ce8d0534048",
+     "4779b12ecc06eb96",
+     "4a8d73221f5cfee7",
+     "b716adffba7dea3c",
+     "ec36aa99095e648a",
+     "a8a35547a15e4a32"
+    ],
+    "n_actions": 41,
+    "n_actions_best_draw": 41,
+    "human_actions": 73,
+    "draws_cleared": 69,
+    "draws_cleared_by_model": 69,
+    "model_cost_mean": {
+     "tokens": 57080,
+     "seconds": 226538.1
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "a8a35547a15e4a32",
+    "actions": [
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "95050a36412bd651",
+     "6a2c5fa2e8857d9c",
+     "c7bebb07762e27d8",
+     "41207d7ec0cc8476",
+     "674f160211d4add2",
+     "eb118e74065d35d3",
+     "6da1245628d805e8",
+     "53f71e8afe3ad705",
+     "359852b12616ea9c",
+     "6e13cff54fe83c06",
+     "e2b5f159886c7d08",
+     "f23a48ac1c29f564",
+     "7939f0c114a541c3",
+     "1ab833f218c8cf39",
+     "2488ff6ff720d80d",
+     "44dd87cab1e2ea64",
+     "7665d0a29980db65",
+     "d80a34b0582c6bf0",
+     "e468c2c1b36e117b",
+     "2f4451742c2e1716",
+     "0d5873132bab47b6",
+     "f2fc8da68b2b4e19",
+     "670aad533eadf37f",
+     "63cde63663816550",
+     "5871352d6a45b038",
+     "7de37b610f5e9197",
+     "00830ed855d6a43f",
+     "3436f61d4e4d4a49",
+     "6af38169e495efa4",
+     "051b602852dcdc32",
+     "1c5eb7cdbdd2ebf0",
+     "d3f3699d4b06174b",
+     "d097f922598ab63b",
+     "626c9074668e62cf",
+     "5fccca090eb037a5",
+     "889f4c52fe832160",
+     "58982864796cf75a",
+     "80bdbd535a2927e5",
+     "9200c851613c5163",
+     "979687dce23b00d4",
+     "e8c4ac12bc2ba62d",
+     "e4f687f3598f293e",
+     "38fd95fb403c0c9e",
+     "ba849c199d964f28",
+     "b62da02d98c36772",
+     "b65ccc6c678a80a6",
+     "086f0c59f5f0c133",
+     "fb8f248936451cf4",
+     "2c2409ec452987a0",
+     "d65e0232326e051c",
+     "f4f7e5f4c07c518c",
+     "0b8ae068593a0584",
+     "ce92029b38ed71bc",
+     "10b5e2faf8e4caaa"
+    ],
+    "n_actions": 54,
+    "n_actions_best_draw": 54,
+    "human_actions": 84,
+    "draws_cleared": 36,
+    "draws_cleared_by_model": 36,
+    "model_cost_mean": {
+     "tokens": 57916,
+     "seconds": 253557.3
+    }
+   }
+  ],
+  "re86-8af5384d": [
+   {
+    "level": 1,
+    "start_hash": "d2194244579a11cb",
+    "actions": [
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "0f10cf86f0b11d19",
+     "3670fdf1e047e37d",
+     "e2f153e96c738e19",
+     "de7496c02707e0cd",
+     "59d63208f407aaee",
+     "6d3aacc07998600a",
+     "651ccc2fc7500853",
+     "aeb6201db3b7ebbf",
+     "f680eb0577be22fd",
+     "9e7aef91a9fe4390",
+     "19522f0d8ddf2012",
+     "1559bf5f16db2139",
+     "3247473ac21c371a",
+     "2b4a2da5b18baed6",
+     "02a32d190150765e",
+     "324f3d4a0d9c0206",
+     "766870cd68df54ba",
+     "8cbd89955d082946",
+     "08d81a03d407cbb9",
+     "196b63a7f3a581c8"
+    ],
+    "n_actions": 20,
+    "n_actions_best_draw": 20,
+    "human_actions": 26,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 6,
+    "model_cost_mean": {
+     "tokens": 9452,
+     "seconds": 5001.0
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "196b63a7f3a581c8",
+    "actions": [
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "293de2f709a1a416",
+     "5d867dc2aab977e1",
+     "a6660b9d5b933a4e",
+     "c6122a2d5f9ea096",
+     "2a77e9f9a18c23dc",
+     "4b268d36f21442a0",
+     "82aaa5b5515fd1c0",
+     "dad8fe4c5cde507a",
+     "75b7b7e935b17c10",
+     "c26a743ca7ae04aa",
+     "c1f5d8801a9dfd4d",
+     "fc27a7802f8448ae",
+     "a1bbb90f9f6991e9",
+     "313a251ad334ab29",
+     "c7df47b79a6cbaf9",
+     "af119f70d0898524",
+     "a99196f4c8b413ff",
+     "80fc63de7e189158",
+     "43b5cdfb8f3e0087",
+     "3bec49e86d25ecac",
+     "cbd88f2a0690a7cb",
+     "634275bb0b5eda5b",
+     "70e39ea57af10f73",
+     "21745883c818a5ce",
+     "8cf1e78941e8d9ac",
+     "3c9226b861238c78",
+     "115f3fd51b2471f3",
+     "c2d74c21cf63c3fc",
+     "753fbd6cbad0109c",
+     "3deedecc2ddc6d33",
+     "50ab74e0c9bf8a63",
+     "f8127bc708c48b3a",
+     "98da00e276ce7210",
+     "01710a084da7bb42",
+     "f15f13f116194a9a",
+     "26c8bf6d84788711"
+    ],
+    "n_actions": 36,
+    "n_actions_best_draw": 36,
+    "human_actions": 42,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 7,
+    "model_cost_mean": {
+     "tokens": 26084,
+     "seconds": 20233.4
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "26c8bf6d84788711",
+    "actions": [
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "9dc9fdca62a50bb1",
+     "91ab604f0842113d",
+     "70c82b301eea6cf2",
+     "bbd3ce2fd440ba14",
+     "a7059a00783554b6",
+     "7c598cefe9640cc6",
+     "dd656dccdf7d8852",
+     "9e08bd5b7b1b7e89",
+     "5b835811ddcaf52a",
+     "943438b69b55d574",
+     "3e97460ff53446ee",
+     "7f460eb3f9d32dd9",
+     "a3769e97cef24756",
+     "36871a8a51522f41",
+     "b9b5595e935f527d",
+     "e93f0df8ab96dc90",
+     "a4cfc30840151c8c",
+     "24d0a51780a2a8a4",
+     "dfb4f8454f51ee44",
+     "3d56439b7a096bd1",
+     "eb1a971ff391f4df",
+     "74522f033999c1fc",
+     "33b2cd2b8ff84058",
+     "c8ba9371106049a2",
+     "b0b63f72bd740643",
+     "77fc46c0df090e35",
+     "45a3d434da9a9380",
+     "a97226d03d5f64a5",
+     "1a046f607b1efc05",
+     "682f347f31202e86",
+     "aeab7ad5f50ee3d6",
+     "14bc597c87458ed5",
+     "af608476700863fe",
+     "16626b05a0fcf426",
+     "54eaada597e84e10",
+     "1423f708afb50b30",
+     "a8a50d8caea95db5",
+     "da59370d8102ae25",
+     "4f3322ab38e87a2a",
+     "dbdd7df91aa9fb69",
+     "a0fe6a21b5c95971",
+     "bd0dad906ede3f27",
+     "5d9cdb14d70a20f0",
+     "16c6968a6df4da3e",
+     "5f8a2b01439dfa9f",
+     "4f1231058f74a224",
+     "50e78b2d3570c506"
+    ],
+    "n_actions": 47,
+    "n_actions_best_draw": 47,
+    "human_actions": 86,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 8,
+    "model_cost_mean": {
+     "tokens": 35608,
+     "seconds": 40208.5
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "50e78b2d3570c506",
+    "actions": [
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "7d88c977314aedbc",
+     "80dcd4ecf99311bf",
+     "6ebfd00d7d6fca51",
+     "835c8acd4a75da93",
+     "bec9cc55972d2c4f",
+     "fe73ed129c73537c",
+     "4d2de9e3aa8ba518",
+     "f01ed947d4eaa178",
+     "b02ade0730f16e0b",
+     "869b91531d12ef54",
+     "6c6eeffd3eecaf5e",
+     "ef4f49bf27c3bb3b",
+     "e9f3b38f8b5f6757",
+     "4364306c49391932",
+     "e22929906ac60318",
+     "b144ee12ae67d59c",
+     "ddbca67e454a1ff3",
+     "7775be516d3a9b4e",
+     "3416dd1aae7c0dd4",
+     "36b11f308707ac85",
+     "1a8cd8bcf5485f8c",
+     "b497b6992d0c881d",
+     "bc86a6978f520cc8",
+     "a8325a549fe0f3ce",
+     "ddfc29ef7f467782",
+     "00defec161f2c4a9",
+     "be8c591acbd865e5",
+     "4834100ad1b71ce3",
+     "a724e7387b24e36e",
+     "46d0f0904e0c082c",
+     "aefa06622b35c2f1",
+     "e7d3b53ad4a849e2",
+     "e433154dba08edb5",
+     "08400240eb7a335d",
+     "6d79ed994026f3e1",
+     "bee41a0ac4292e9f",
+     "ff66874c20d793f3",
+     "a60046c9f087aecb",
+     "ada560937badd0ed",
+     "3c34b19a55ffc1e6",
+     "59ec10b2ecb32971",
+     "685c77a0c1401490"
+    ],
+    "n_actions": 42,
+    "n_actions_best_draw": 42,
+    "human_actions": 108,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 5,
+    "model_cost_mean": {
+     "tokens": 32910,
+     "seconds": 119483.3
+    }
+   },
+   {
+    "level": 5,
+    "start_hash": "685c77a0c1401490",
+    "actions": [
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "c362127422bd8cc1",
+     "3966f39e51ac9aea",
+     "744412189ba7809b",
+     "225b1d6cc9ca4b63",
+     "84027822bfbca1e7",
+     "a8aeaf72461a1886",
+     "407eb0ef89980bc3",
+     "e2bdc88a66d6e743",
+     "3c44a32a1e4903ac",
+     "b5b7b105103b937b",
+     "23418e6453907521",
+     "59eee5982894eabf",
+     "d61c17b2b96bb2b6",
+     "db9d22a90fd8d9b5",
+     "d7ce0fb1ba9f767b",
+     "45755238df3eabd5",
+     "e047ee94b8aa5012",
+     "fe4750b94d7aea65",
+     "28851c35fcc4faa5",
+     "605dde16c38ec349",
+     "ed51b18f2758ae7b",
+     "0ff17afe06c097f1",
+     "ee84a154db249562",
+     "477efddd37c35955",
+     "5fc2d8c2d4e2fe6a",
+     "5eaf887e554eedf7",
+     "521ab9ae051040c8",
+     "0963d5f95a4bce59",
+     "f16169c8125a5974",
+     "0f1557b287156cb7",
+     "cbad75f16ceee19b",
+     "249897f22fbdc1f5",
+     "fb061392a74dfa8b",
+     "d499f0f6761825cf",
+     "25e78a9b328a2bee",
+     "12360c89f326489e",
+     "60c326f9921487be",
+     "d0db7376d9b098cd",
+     "6660fe70526fa389",
+     "dbc13d63a7ef17da",
+     "9353552221188460",
+     "50852d5453568687",
+     "90f30c77bf98d13e",
+     "65093dafd13965c5",
+     "332b512c910f5488",
+     "50fc2eb4211d913c",
+     "b27c820ab2864a70",
+     "545470925662a33c",
+     "2887a27d120aea1e",
+     "95341247e3de0283",
+     "f5411080ee30bdb2",
+     "e4b7d78c9383a4b2",
+     "3b69ea1ca0a7cd4a",
+     "4aac1311b395b304",
+     "40c87ce10421852e",
+     "a6c3cc2b9e9a1467",
+     "943e465c82ab47e1",
+     "5fedf12009143e78",
+     "6124ef39fd76faef",
+     "4fdca65eb391a216",
+     "0e6698e74e4340d6",
+     "f92195353c3cc3d6",
+     "1e37bfc83102522c",
+     "b8769b54fdad481e",
+     "dee5b6af965461af"
+    ],
+    "n_actions": 65,
+    "n_actions_best_draw": 65,
+    "human_actions": 189,
+    "draws_cleared": 73,
+    "draws_cleared_by_model": 73,
+    "model_cost_mean": {
+     "tokens": 111466,
+     "seconds": 179225.7
+    }
+   },
+   {
+    "level": 6,
+    "start_hash": "dee5b6af965461af",
+    "actions": [
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION5",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION1",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION3",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION2",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ],
+     [
+      "ACTION4",
+      {}
+     ]
+    ],
+    "frame_hashes": [
+     "1a6e783df5f1ec9d",
+     "c83cc459e9ed96ac",
+     "2615e9ab5e524911",
+     "f57d549a8cdfcff2",
+     "f64765c9ca36143c",
+     "f3617a1bb323ca25",
+     "3632ab1f600d71e3",
+     "888cc727e79ed98f",
+     "2cedf002746b99b3",
+     "7f835e10d3aad664",
+     "6c8f7bbb213cbc57",
+     "7115a84351163c3e",
+     "e0b2a420d7586660",
+     "f5c6d90f507f8017",
+     "b5d161e4598eff19",
+     "660f21fec86c872b",
+     "79b51f7b5107f3d3",
+     "08ec4c33ac2ff158",
+     "afcec552ee97dde2",
+     "cab0c0a06e72a985",
+     "e0313fd656a82656",
+     "aee48017df55eca2",
+     "a07c5fd67522cc66",
+     "e623b7574a036ac4",
+     "1b527c86d84a1c99",
+     "0ee9df5a4425f175",
+     "7a6e0cf2e1806dfc",
+     "33262776a09cfc21",
+     "401679f16e13534c",
+     "03cc11b8f8c79a57",
+     "cc539abbd103fb4c",
+     "92409a39291c8e2c",
+     "01e4be51eb48e2fc",
+     "a8ff2045901c386b",
+     "47572d26dbe0f7bb",
+     "41b12a72a072afaa",
+     "a4d86eca1d349794",
+     "9c347c9c1b61a54b",
+     "58f3904c4bfeac63",
+     "6e40bf00b4310b21",
+     "7cbe8c73a2b34503",
+     "7364cf6c6b256942",
+     "1bd2ec82c9c4a7da",
+     "db7616fa7f099b9f",
+     "76dea1d5eb069b0c",
+     "bab4c0cdee566af2",
+     "0f4664cb2da787c0",
+     "51174e13313e8590",
+     "249f8d75128be45a",
+     "a58cbc3eccf45484",
+     "c9f9a85a0cdc6193",
+     "b8075a14fd7f5e8b",
+     "eae907ecb643c2bf"
+    ],
+    "n_actions": 53,
+    "n_actions_best_draw": 53,
+    "human_actions": 139,
+    "draws_cleared": 36,
+    "draws_cleared_by_model": 36,
+    "model_cost_mean": {
+     "tokens": 76440,
+     "seconds": 246960.7
+    }
+   }
+  ],
+  "s5i5-18d95033": [
+   {
+    "level": 1,
+    "start_hash": "626e707f1a411e86",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 48,
+       "y": 21
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 24,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 24,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 24,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 24,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 24,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 24,
+       "y": 47
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "5be48303f097a2f2",
+     "fab09df0464035a8",
+     "32bee164d0eb6c73",
+     "b7c4737d287987dc",
+     "174cd3ec08f0bf0a",
+     "a358091444e971f2",
+     "159b44977786fd2e",
+     "a879a5d533909b52",
+     "c046501e56b52219",
+     "735020a36fbc8b82",
+     "03e229468741435f",
+     "4af69da096d287c8",
+     "8084c3f0e5f1f5e8"
+    ],
+    "n_actions": 13,
+    "n_actions_best_draw": 13,
+    "human_actions": 20,
+    "draws_cleared": 83,
+    "draws_cleared_by_model": 18,
+    "model_cost_mean": {
+     "tokens": 13366,
+     "seconds": 5372.1
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "8084c3f0e5f1f5e8",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 30,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 60,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 60,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 60,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 60,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 60,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 60,
+       "y": 57
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "d4cc87439aa34ba2",
+     "e8ac423134e05f2c",
+     "a69bb560123d3376",
+     "0a01015c5d748ff1",
+     "977707610c7234ec",
+     "1e685eaea8d7d49b",
+     "2bc08807a4773e76",
+     "888c61b6d7d1a8c8",
+     "ef849e6a9c7b9d1d",
+     "e13f54569990c2fe",
+     "bf1e9664a3d4e386",
+     "1b73602f8bb307b1",
+     "19f709e66e8e244a",
+     "f440de5011a64a0e",
+     "3e71d1cda028e29b",
+     "2c3808b112668f1c",
+     "7214a39b8f0c0ba8",
+     "b2f7be174ad8b268",
+     "c8f53812c9fda4be",
+     "70c4ab7862bf9e63",
+     "6d2b652f62bc1bb7",
+     "90ff562b4cd3366b",
+     "2ab876c151d3efc8",
+     "e54458aad408553e",
+     "173e386f6c329dd4",
+     "796554857d2bcfdb"
+    ],
+    "n_actions": 26,
+    "n_actions_best_draw": 26,
+    "human_actions": 89,
+    "draws_cleared": 81,
+    "draws_cleared_by_model": 29,
+    "model_cost_mean": {
+     "tokens": 76721,
+     "seconds": 58867.6
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "796554857d2bcfdb",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 7,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 19,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 19,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 19,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 7,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 7,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 7,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 7,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 45,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 57
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "8205164034b2f295",
+     "bdb2e531e76f4908",
+     "25ce83b5a19e6ded",
+     "27091377dc5d8036",
+     "1876d53b8f22e5ea",
+     "d05de6417f882913",
+     "224f84b31f648037",
+     "9ee4542c79275bd0",
+     "a4d6cc3f4dcd2eeb",
+     "45834711ece35ab0",
+     "efdc27989c6a2ab8",
+     "2bccdc7bfbe258ed",
+     "6038389d9b39157c",
+     "db6f6c296df324b0",
+     "e52837374cc2bc1d",
+     "ba9e0ca3126259df",
+     "d9cf733facd59079",
+     "2b28445bc9268a6b",
+     "b15737ebdd8072da",
+     "f11c5a216c8112d1",
+     "31047b3fb2fe631c",
+     "304370c94fe58d18",
+     "f6dc95e9794df242",
+     "d3f4727622806fdd",
+     "d3fbc831fdc7a414",
+     "745eb257a664b098",
+     "0fa45b016125f1da",
+     "f26fb2906ff12cd7",
+     "ae48721b60148e04",
+     "f28f8122e5aba51c",
+     "eb1d16d2277a812c",
+     "8ae4962a3e506249",
+     "709073fbaa73cf89",
+     "da3724e765d5817d",
+     "992aafea3227ed7d",
+     "335942d5b0b13391",
+     "0d57984387ebc8e0"
+    ],
+    "n_actions": 37,
+    "n_actions_best_draw": 37,
+    "human_actions": 106,
+    "draws_cleared": 47,
+    "draws_cleared_by_model": 46,
+    "model_cost_mean": {
+     "tokens": 121873,
+     "seconds": 123205.1
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "0d57984387ebc8e0",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 54
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "4da1f56b2a04fba7",
+     "ff157970068c7be3",
+     "3068a39619d25f3b",
+     "ec15f5b9e6026456",
+     "f62a44ce68bb8872",
+     "c24165df543ea125",
+     "c448a1f814b6116d",
+     "5d4a55e4be30c8cf",
+     "21bce041924b315b",
+     "25d35c367b586158",
+     "ed1e50f019cdbb8f",
+     "b4d7f9c6c067cb7f",
+     "ae420594597d5dc6",
+     "69e62e5aca9249c7",
+     "cf7a52ac8f06551a",
+     "f9f1254bf3905954",
+     "fe353c2499399602",
+     "b8fac38c8048bef2",
+     "ccb7a2d040ea4eef",
+     "d56cc22ac2e309e9",
+     "c9945f1aedda3d89",
+     "17e8b441d4abb076",
+     "96f88834583cfe50",
+     "01d1cee13663ac34",
+     "d415a268d72f6deb",
+     "0ec7e14b40d240e3",
+     "5b8ad274160f5ad0",
+     "7f6299978da58784",
+     "88cecac3574139a4",
+     "6b82ccdc60c6b7b3",
+     "91ad5dd4cadd4962",
+     "8e64a1e54a498ea1",
+     "2f44dc811a32131d"
+    ],
+    "n_actions": 33,
+    "n_actions_best_draw": 33,
+    "human_actions": 54,
+    "draws_cleared": 14,
+    "draws_cleared_by_model": 14,
+    "model_cost_mean": {
+     "tokens": 59777,
+     "seconds": 92036.5
+    }
+   },
+   {
+    "level": 5,
+    "start_hash": "2f44dc811a32131d",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 51,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 6,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 27,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 42,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 57
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "3c47e5136c223c70",
+     "67f941e733c2d4bd",
+     "df9b3dedd8afec7f",
+     "29b61aa7797a144a",
+     "b665eb78b918e062",
+     "88471a7860bea72a",
+     "77de5b69928be819",
+     "1f63725675a7e453",
+     "9043b13b7a6edbe5",
+     "9b23c45b40eb7adc",
+     "c29be1d308cf239a",
+     "ff725db234dafe66",
+     "4b5331cf189183b3",
+     "2d71f9c44a28e46d",
+     "6526bf382378ac02",
+     "7ef32c7bab9c48d1",
+     "eb29b2c05fdb2cfa",
+     "62d52383f9e41c59",
+     "975ba756cc93e1b3",
+     "704cff88f0f91c01",
+     "0ada6d9fe6f99837",
+     "e791560eba8d400c",
+     "c5efa3b62b2666f1",
+     "21bf054bea495a88",
+     "c28bdf7168359d4c",
+     "f992e761ee7de870",
+     "5672ac5f356bcd07",
+     "acd9c156d4fac794",
+     "e39d41fa0ef59809",
+     "3a616b8a59adad49"
+    ],
+    "n_actions": 30,
+    "n_actions_best_draw": 30,
+    "human_actions": 162,
+    "draws_cleared": 10,
+    "draws_cleared_by_model": 10,
+    "model_cost_mean": {
+     "tokens": 53354,
+     "seconds": 103912.9
+    }
+   },
+   {
+    "level": 6,
+    "start_hash": "3a616b8a59adad49",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 31,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 50,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 31,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 12,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 15,
+       "y": 57
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "a70c957459f93887",
+     "2b84c3ae0cf8b33c",
+     "8f2d6cf6e3b834ff",
+     "9112f47af8771448",
+     "aabb71d70c9398f5",
+     "28d5ef6db1f9a636",
+     "f80b62317e081e3e",
+     "d8fab003b26d8e02",
+     "87ee894c6be29745",
+     "79acedcb374389d3",
+     "52eb351d1f42200b",
+     "814db8d7c775269b",
+     "740b3ea21eed2215",
+     "ea5588fb476876bb",
+     "b82550c3537e1c2d",
+     "8ab0e62c19a80464",
+     "6671da3fa271cfa0",
+     "bc632af7ada42605",
+     "b6e663a33e3d2542",
+     "37fe7d2ad0d32893",
+     "946508a133863c66",
+     "e78c63a396c7655d",
+     "652c54ff0a5e0fc5",
+     "96cbabe4ba540ac5",
+     "31cabb68631db076",
+     "66d5cbd08b3f1c2a"
+    ],
+    "n_actions": 26,
+    "n_actions_best_draw": 26,
+    "human_actions": 38,
+    "draws_cleared": 5,
+    "draws_cleared_by_model": 5,
+    "model_cost_mean": {
+     "tokens": 53466,
+     "seconds": 122040.4
+    }
+   }
+  ],
+  "tn36-ef4dde99": [
+   {
+    "level": 1,
+    "start_hash": "42dd0a237474db4d",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 26,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 41,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 26,
+       "y": 45
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 45
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 41,
+       "y": 45
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 36,
+       "y": 55
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "490d84e822bd812f",
+     "d3c102ab171a2fd6",
+     "aeb57a23ed885fa8",
+     "c62ffabce209b188",
+     "70d2c23e0875eea1",
+     "eba33fd2540ff12f",
+     "0d111fea1bf894a7"
+    ],
+    "n_actions": 7,
+    "n_actions_best_draw": 7,
+    "human_actions": 32,
+    "draws_cleared": 82,
+    "draws_cleared_by_model": 14,
+    "model_cost_mean": {
+     "tokens": 53509,
+     "seconds": 88665.2
+    }
+   },
+   {
+    "level": 2,
+    "start_hash": "0d111fea1bf894a7",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 46,
+       "y": 58
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "e6b7ccab53ac814c",
+     "f773ed68da52c72b",
+     "7ed14f77157879c5",
+     "01fed0649625f4c4",
+     "ab7c59b6f87c13cb",
+     "fca55d768baa9888",
+     "1786cf0aa7ac15b9",
+     "144b87fe9b5e22a0",
+     "caf8612799b1c5dc"
+    ],
+    "n_actions": 9,
+    "n_actions_best_draw": 9,
+    "human_actions": 72,
+    "draws_cleared": 80,
+    "draws_cleared_by_model": 4,
+    "model_cost_mean": {
+     "tokens": 103305,
+     "seconds": 117911.4
+    }
+   },
+   {
+    "level": 3,
+    "start_hash": "caf8612799b1c5dc",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "7c4a27bfaaffe58a",
+     "e0b8a19d7d64ba93",
+     "f2729d5edf60715b",
+     "59dd882ffdb8cb2e",
+     "dfe7b80aad0e22c7",
+     "679b83b1b2a9de51",
+     "f8796e6aae2cad85",
+     "56d479ed6b58599b",
+     "2f4c32cf7aea8322"
+    ],
+    "n_actions": 9,
+    "n_actions_best_draw": 9,
+    "human_actions": 26,
+    "draws_cleared": 79,
+    "draws_cleared_by_model": 7,
+    "model_cost_mean": {
+     "tokens": 43098,
+     "seconds": 27164.9
+    }
+   },
+   {
+    "level": 4,
+    "start_hash": "2f4c32cf7aea8322",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "61384706f71e9733",
+     "c7c09ff42353a65f",
+     "6b22aee276099f79",
+     "49b8cb718f168205",
+     "4029f19ea49c3f54",
+     "f3c5cb62ee767a65",
+     "e88d1588c75c881e",
+     "4f1de19e7188ed69",
+     "9759e8e12257e2f6",
+     "8d177d3596c42640",
+     "c5632df0189639f7",
+     "b5e9a8c2e26fac2c"
+    ],
+    "n_actions": 12,
+    "n_actions_best_draw": 12,
+    "human_actions": 40,
+    "draws_cleared": 77,
+    "draws_cleared_by_model": 5,
+    "model_cost_mean": {
+     "tokens": 73463,
+     "seconds": 51287.6
+    }
+   },
+   {
+    "level": 5,
+    "start_hash": "b5e9a8c2e26fac2c",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 45
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "973a51c4bce576d5",
+     "a311a3afe10f56a7",
+     "c7df943a4de857b3",
+     "7a8f7a25c3af4e46",
+     "3fd9e701bd5d10e8",
+     "7bba413ab5cb2a19",
+     "fd961c121acbae9b",
+     "4252f926b3b6c70c",
+     "487fa6306eaa5bed",
+     "455c2bfb84b2ade0",
+     "5734dfef6c849b50",
+     "b1b17f14fa837f30",
+     "3ef4fe347d81fe54",
+     "42e2734ff6dba39a",
+     "1536b4388a3854e5",
+     "af97d992e94373ae"
+    ],
+    "n_actions": 16,
+    "n_actions_best_draw": 16,
+    "human_actions": 30,
+    "draws_cleared": 76,
+    "draws_cleared_by_model": 3,
+    "model_cost_mean": {
+     "tokens": 125820,
+     "seconds": 54678.9
+    }
+   },
+   {
+    "level": 6,
+    "start_hash": "af97d992e94373ae",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 13,
+       "y": 57
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 33,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 38,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 53,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 58,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "040bad963a9cea73",
+     "4e997e511572c4e5",
+     "b817873922484030",
+     "b0adeea9776e95f1",
+     "42dc37a26b90af23",
+     "6cc65b97924163f7",
+     "d908996926ddcf67",
+     "1b857db2ade4b8e8",
+     "b7a5ca5327086034",
+     "60c6a4bf61eb11cb",
+     "c02967071218c9f5",
+     "273e0f31f0ee7856",
+     "006364923dadfff7",
+     "f8de830392adeee8",
+     "78937c1de7b33b1f",
+     "be72d654af54c639",
+     "30102b051490c88d",
+     "f9910f88de1c80f1",
+     "b71fb216d4f38711",
+     "baa5bb55e493f588",
+     "692311ec9ebceac7"
+    ],
+    "n_actions": 21,
+    "n_actions_best_draw": 21,
+    "human_actions": 55,
+    "draws_cleared": 43,
+    "draws_cleared_by_model": 43,
+    "model_cost_mean": {
+     "tokens": 136686,
+     "seconds": 169339.6
+    }
+   },
+   {
+    "level": 7,
+    "start_hash": "692311ec9ebceac7",
+    "actions": [
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 39,
+       "y": 48
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 36
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 42
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 33
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 39
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 35
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 54,
+       "y": 41
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 34,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 44,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 49,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 59,
+       "y": 47
+      }
+     ],
+     [
+      "ACTION6",
+      {
+       "x": 57,
+       "y": 58
+      }
+     ]
+    ],
+    "frame_hashes": [
+     "702b35ab01652d36",
+     "054eb1fa13f940fe",
+     "1b9c1741b1121535",
+     "ca30a407e0502cae",
+     "99b0eca39dd1e9c3",
+     "36673822664d49d3",
+     "3442e6c105263a86",
+     "2da456b43d8fd3e4",
+     "5190adb62a1fa940",
+     "2ca324e90b116e80",
+     "5e874956a8e85469",
+     "0399a0d6d5ddc8a0",
+     "045bef8c70e86ad5",
+     "5e687e8ca826ef9d",
+     "4ad4c5dbf3823adc",
+     "ff5a0dd365d057cb",
+     "5113806a1beab90c",
+     "b3cc0f92bc098c2c",
+     "7f0263a4727c1dda",
+     "1eccf89f7bd6f5ea"
+    ],
+    "n_actions": 20,
+    "n_actions_best_draw": 20,
+    "human_actions": 62,
+    "draws_cleared": 21,
+    "draws_cleared_by_model": 21,
+    "model_cost_mean": {
+     "tokens": 38778,
+     "seconds": 140476.4
+    }
+   }
+  ]
+ },
+ "replay_mismatch": []
+}

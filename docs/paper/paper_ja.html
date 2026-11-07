@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>エージェントはいつ考えずに行動できるか（日本語版）</title>
+<style>
+@page { size: A4; margin: 17mm 18mm 18mm; @bottom-center { content: counter(page); font-size: 8pt; color: #666; } }
+body { font-family: Georgia, "Times New Roman", "Noto Serif CJK JP", serif; font-size: 10.4pt; line-height: 1.42; color: #111; max-width: 174mm; margin: 0 auto; }
+html[lang="ja"] body { font-family: "Noto Serif CJK JP", "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 9.8pt; line-height: 1.6; }
+h1 { font-size: 17pt; line-height: 1.2; margin: 6mm 0 2mm; text-align: center; }
+.subtitle { text-align: center; font-size: 11pt; color: #555; margin: 0 0 3mm; font-style: italic; }
+.author { text-align: center; font-size: 10pt; margin: 0 0 5mm; }
+h2 { font-size: 12.2pt; margin: 6mm 0 2mm; border-bottom: .6pt solid #bbb; padding-bottom: 1mm; break-after: avoid; }
+h3 { font-size: 10.8pt; margin: 4mm 0 1.5mm; break-after: avoid; }
+p { margin: 0 0 2.2mm; text-align: justify; orphans: 3; widows: 3; }
+html[lang="ja"] p { line-break: strict; }
+.abstract { border: .6pt solid #bbb; padding: 3mm 4mm; margin: 0 0 4mm; font-size: 9.8pt; }
+table { border-collapse: collapse; width: 100%; font-size: 8.6pt; line-height: 1.35; margin: 2mm 0 3mm; }
+tr { break-inside: avoid; } thead { display: table-header-group; }
+th,td { border-top: .5pt solid #bbb; border-bottom: .5pt solid #bbb; padding: 1.1mm 1.4mm; vertical-align: top; text-align: left; overflow-wrap: break-word; hyphens: manual; }
+th { background: #f3f2ee; font-weight: bold; }
+caption { caption-side: bottom; text-align: left; font-size: 8.6pt; color: #555; padding-top: 1.2mm; }
+figure { margin: 3mm 0 4mm; break-inside: avoid; }
+figure img,figure svg { width: 100%; height: auto; display: block; }
+figcaption { font-size: 8.6pt; color: #555; margin-top: 1.2mm; }
+ul,ol { margin: 0 0 2.2mm 5mm; padding-left: 3mm; } li { margin-bottom: 1mm; }
+.refs { font-size: 8.6pt; line-height: 1.32; } .refs li { margin-bottom: 1.1mm; break-inside: avoid; }
+.note { font-size: 8.8pt; overflow-wrap: anywhere; }
+code { font-family: Consolas,"DejaVu Sans Mono",monospace; font-size: 8.8pt; overflow-wrap: anywhere; }
+a { color: inherit; } .keep { break-inside: avoid; } .contrib li { margin-bottom: 1.4mm; }
+</style>
+</head>
+<body>
+<h1>エージェントはいつ考えずに行動できるか</h1>
+<p class="subtitle">ARC-AGI-3のLLMエージェントにおける実行契約と停止記録による診断</p>
+<p class="author">Yuto Kojima<br><span class="note">ARC Prize 2026 論文部門 · 対応するARC-AGI-3提出：56836939（36.14）、57877794（30.68）</span></p>
+<div class="abstract"><b>要旨</b>　本研究は、LLMエージェントの成功経験を、再推論なしに実行できる手順として保持する方法を検討する。ARC-AGI-3のKaggle用ハーネスに、技能の適用条件、実行中の照合、停止条件を管理するミドルウェアECA（Existential-Cognition Architecture）を追加した。対象は、過去の成功軌跡の再生と、ゲーム規則を表すパラメータ付きモデルの2種類である。いずれも観測結果が予測と一致する間はLLMを呼ばずに行動し、不一致を検出すると停止してLLMへ制御を返す。公開8ゲームの実験では、保存した手順の再生は182回すべてで一致し、再生中の生成トークンは0だった。1実行あたりのクリア数は、対照の平均34.5から、ライブラリv2では46となった。意図的な逸脱は16件すべてで所定の位置で検出され、途中状態から再開したLLMは16件中11件をクリアした。最初から解く条件では7件だった。事前登録した比較では、同じ認証済み計画を助言として渡す条件も、実行権限をソルバーに与える条件と同じ対象レベルをクリアしたが、より多くのLLMターンと生成トークンを要した。ただし、追加の権限条件の1実行では、認証できなかったレベルをLLMが担当し、担当レベルの生成トークンは助言条件のどちらの実行よりも多かった。一方、未見33ゲームでは、既存技能によるクリアは得られなかった。LLMに遷移モデルを生成させる実験では、5つのレベル試行で生じたゲートの停止13件のすべてで、その後に新しい版のモデルが定義された。5試行中3試行では、記録済みの全遷移と一致し計画を持つ版に到達し、2レベルではハーネスがクリアまで実行した。所要手数はLLM単独と同程度だった。観測済み遷移との整合性だけでは、未観測の遷移を予測できない例が残った。これらの結果から、既知課題の再利用における費用と再現性、および未見課題への適用上の制約を報告する。</div>
+
+<h2>1　はじめに：解いた課題を再利用可能な能力として残す</h2>
+<p>一度解けた課題を、次回も確実かつ低コストで実行するには何が必要か。本研究では、LLMエージェントが得た成功を実行可能な手順として保持し、その手順が適用できなくなった場合に推論へ戻る仕組みを扱う。</p>
+<p>本研究の対照エージェントには、ある実行で得た成功を、次の実行で直接利用できる手順として残す経路がない。同じ設定の2実行で、公開8ゲームのクリア数は31と38だった。収集した83実行では計45レベルに一度以上成功しているが、1実行あたりの平均は33.3である。内蔵ソルバー（3.3節）を無効にすると、ソルバーが担当する13レベルに、LLMは1実行あたり36〜51万トークンを使い、それでも一部をクリアできなかった。行動履歴を参照できても、過去の成功がそのまま実行能力として使われるわけではない。</p>
+<p>成功した手順を保存すれば、同じ課題を解き直す費用を抑えられる。ただし、過去の手順が現在の状況にも適用できるとは限らない。盤面が同じでも内部状態が異なる場合や、実行途中で予測と異なる変化が起きる場合がある。再利用には、開始時の適用判定に加え、実行結果の監視と、不一致を検出した場合の停止が必要になる。</p>
+<p>ECAは、この処理をLLMと環境の間で担うミドルウェアである。名称のExistentialは、技能が行動する権限の根拠を指す。その根拠は、推論ではなく、環境で実際に観測し検証した遷移（3節の証拠<i>E</i>）に限る。成功軌跡の再生と、ゲーム規則を表すモデル（以下「型」）に、共通の実行契約を適用する。技能は所定の条件を満たした場合に実行権限を得る。各行動の結果を予測と照合し、最初の不一致で権限を取り消してLLMへ制御を返す。契約が保証するのは、不一致を観測した後にその技能の自動実行を継続しないことであり、誤り自体の防止ではない。</p>
+<p>この役割分担は、熟練した行動の自動性と監督制御を参考にしている。自転車の運転では、慣れた動作を逐一検討する場合と、予想外の状況に対処する場合を区別できる。関連する概念として、事例の想起による自動性（Logan, 1988）、運動スキーマ（Schmidt, 1975）、新規状況や誤りへの監督制御（Norman &amp; Shallice, 1986）、動作結果の順モデル（Wolpert et al., 1995）、信頼性に応じた習慣と熟慮の調停（Daw et al., 2005）がある。これらは設計を説明するための類比であり、人間の運動学習を再現したという主張ではない。本研究はフィジカルAIのミドルウェアとして始まり、まず離散的なゲーム環境で実行制御を評価した。</p>
+<p>評価は2つに分ける。既知の公開ゲームでは、成功手順の保存と再利用、実行費用、逸脱後の引き継ぎを測る。未見ゲームでは、既存技能の適用範囲を測る。後者にはKaggleの非公開評価とは別のゲーム集も用いる（2節、5.6節）。本稿の貢献は次の3点である。</p>
+<ol class="contrib">
+<li><b>2種類の技能に対する共通の実行契約（3節）。</b>成功軌跡は盤面のハッシュで照合し、型は観測済み遷移とモデルの整合性を確認する。技能ごとの適用判定と、行動後の検証、権限の取消し、LLMへの制御返却を、共通の契約で扱う。成功軌跡は実行間に回収し、再生検証後にライブラリへ登録する。</li>
+<li><b>競技用モデルと実行予算の下での測定（5節）。</b>推論の反復にかかる費用、助言と直接実行の違い、再生の一致、逸脱後の再開、未見ゲームへの適用、LLMによるモデル生成と停止後の修復を評価する。対応するKaggle提出はECAOD v1（36.14）と失敗ノート版（30.68）であり、追加のライブラリ実験とは区別する。</li>
+<li><b>停止記録による失敗の分析（6節）。</b>予測と観測の不一致を記録し、考えられる原因と、その切り分けに必要な情報を整理する。</li>
+</ol>
+<p>LLMを呼ばない再生と逸脱時の引き継ぎは、GUIエージェントにも先行例がある（4節）。認知科学との類比そのものを新規性とはせず、共通の実行契約と、その費用・適用範囲の測定を本稿の対象とする。</p>
+<p>型は、評価の前に公開ゲームを基に事前実装したもので、提出したカーネルのソルバーとして用いた。本稿は型を獲得する方法を提案せず、型が汎化するとも主張しない（未見ゲームでのクリアは0件、5.6節）。本稿では型を固定の技能源として用い、実行契約そのもの、すなわち同じ計画に対する権限と助言の違い、不一致時の取消し、LLMへの引き継ぎを測る。LLMがモデルを書く場合に何が変わるか、停止後の修復を含めて5.7節で扱う。</p>
+
+<h2>2　設定</h2>
+<p><b>ARC-AGI-3。</b>ARC Prize Foundation（2026）の対話型ゲーム集であり、16色・64×64の盤面に対して、キー入力に相当する行動、クリック、RESETを実行する。各ゲームには複数のレベルがあり、人間の基準手数に対して採点される。非公開評価では、参加者にとって未見のゲームを各1回実行する。本研究のKaggle提出は、オフライン、GPU 1枚、競技の時間制限内で動作する。</p>
+<p><b>ハーネスとモデル。</b>Daniel FranzenのMilestone 2公開ノートブック（Franzen, 2026）を使用する。これはTufa LabsのDuckハーネス（Bessis et al., 2026、<code>tufa-arc-agi-framework</code>）を用い、Qwen3.8 Flash-NextをW4A16量子化と投機的デコード用ドラフタ付きでvLLMから呼び出す。LLMは盤面と履歴を受け取り、<code>action([...])</code>を呼ぶPythonコードで行動する。長くなったプロンプトは要約に置き換えられる。ECAはハーネスとゲームの間に配置し、機能ごとに環境変数で有効・無効を切り替える。</p>
+<p><b>ローカル評価。</b>オンラインの比較実験には、公開8ゲーム（59レベル）、Colab G4、同じモデル、1ゲーム60分の予算を用いた。未見ゲームの測定には、NVIDIAが公開したARC-AGI-3形式の25ゲーム（Apache-2.0、NV25）と、別作者の8ゲーム（arcint）を用いた。これらは測定対象であり、結果に基づく調整は行っていない。記録済み軌跡を用いたオフライン解析は、各節と付録Aに示す。</p>
+
+<h2>3　実行契約</h2>
+<p>保存した手順を再利用する際には、実行を開始できる条件、継続できる条件、停止してLLMへ制御を戻す条件を定める。表1に、これらの条件と用語の対応を示す。</p>
+<table><caption><b>表1.</b> 実行契約の判定項目。</caption><thead><tr><th>判定項目</th><th>用語</th></tr></thead><tbody>
+<tr><td>モデルは観測済み遷移を説明できるか</td><td>観測した証拠に対する閉包</td></tr><tr><td>現在の状況で技能の実行条件を満たすか</td><td>認証</td></tr><tr><td>どの範囲までLLMを呼ばずに実行するか</td><td>実行権限（lease）</td></tr><tr><td>予測と観測が一致しなくなったか</td><td>権限の取消しと制御の返却</td></tr></tbody></table>
+<h3>3.1　閉包、認証、実行権限</h3>
+<p>レベルを、隠れ状態<i>s</i>を持つ決定論的な遷移系とみなす。エージェントが観測するのは盤面<i>f</i> = render(<i>s</i>)である。技能ρは、レベルの履歴<i>h</i>と行動<i>a</i>から次の盤面を予測するP<sub>ρ</sub>(<i>h</i>, <i>a</i>)を持つ。証拠<i>E</i>は観測済み遷移(<i>h</i><sub>i</sub>, <i>a</i><sub>i</sub>, <i>f</i><sub>i+1</sub>)の集合とする。</p>
+<ul><li>ρが観測済みの次盤面をすべて予測できるとき、<i>E</i>に対して<b>閉じている</b>と呼ぶ。型ではHUDを含む外周4マスを除いて比較する。ここでいう閉包は、有限の証拠との一致を指す。</li><li>ρが証拠と整合し、そのモデルの下でレベル完了に至る計画を持つとき、<b>認証</b>する。再生では、保存した成功軌跡が証拠であり、現在の開始盤面と保存した開始盤面の一致を適用条件とする。</li><li>認証されたρに、一定範囲の<b>実行権限</b>を与える。行動後の観測を毎手確認し、最初の不一致で権限を取り消す。照合の対象は技能源ごとに定める。再生では観測した盤面を保存した盤面と照合する。型では、それぞれの検証器が定める予測を照合する。予測した次盤面全体のハッシュを照合する型もあれば、解析した物体の位置、盤面の静的な署名、残りの計画を照合する型もある（付録B）。毎手の厳密な予測を持たない型は、新しい盤面で認証をやり直す。共通なのは実行契約であり、照合の対象は共通ではない。制御をLLMへ戻し、対応する構成では停止位置や不一致の内容をノートで伝える（表2）。</li></ul>
+<p>実行時保証（runtime assurance）と同様に、実行条件を外部の機構で監視する。ただし、本稿で制御を戻す先はLLMであり、検証済みの安全制御器ではない。以下の3点を5〜6節で確認する。</p>
+<p><b>P1：再生の一致を検査できる。</b>決定論的な環境で、開始状態と行動列が同一なら、観測列も同一になる。ただし、開始盤面の一致だけでは内部状態の一致を保証できない。再生は保存した観測列と一致する間だけ継続し、異なる盤面を初めて観測した時点で停止する。観測に現れない違いは検出できない。</p>
+<p><b>P2：最初の観測可能な反例で実行を止める。</b>毎手検証するため、誤った技能の実行は最初の予測不一致で停止する。不一致を生じた行動は既に実行されており、その影響を取り消す保証ではない。</p>
+<p><b>P3：盤面だけでは予測に必要な状態を区別できない場合がある。</b>同一の盤面と行動から異なる次盤面が観測される場合、盤面と行動だけを入力とする決定論的予測器は、その証拠のすべてに一致できない。履歴の追加によって区別できる場合がある。これは、能動オートマトン学習におけるapartnessの考え方と関係する（Vaandrager et al., 2022）。</p>
+<figure><svg viewBox="0 0 700 255" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans CJK JP,Arial,sans-serif" font-size="12" role="img" aria-label="Execution contract">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect x="10" y="25" width="200" height="62" rx="6" fill="#eaf2fc" stroke="#2a78d6"/><text x="110" y="46" text-anchor="middle" font-weight="bold">事例の再生（ライブラリ）</text><text x="110" y="64" text-anchor="middle" font-size="10">過去の成功手順を再生</text><text x="110" y="78" text-anchor="middle" font-size="10">開始盤面のハッシュで照合</text>
+<rect x="10" y="105" width="200" height="62" rx="6" fill="#eaf2fc" stroke="#2a78d6"/><text x="110" y="126" text-anchor="middle" font-weight="bold">型（mechanic families）</text><text x="110" y="144" text-anchor="middle" font-size="10">事前に実装した15モデル</text><text x="110" y="158" text-anchor="middle" font-size="10">観測済み遷移との整合性を確認</text>
+<rect x="262" y="50" width="176" height="92" rx="6" fill="#f6f5f1" stroke="#555"/><text x="350" y="70" text-anchor="middle" font-weight="bold" font-size="11">ゲート（共通の実行契約）</text><text x="350" y="89" text-anchor="middle" font-size="10">付与：認証</text><text x="350" y="104" text-anchor="middle" font-size="10">確認：毎手の観測</text><text x="350" y="119" text-anchor="middle" font-size="10">取消：最初の不一致</text><text x="350" y="134" text-anchor="middle" font-size="10">返却：停止位置と観測記録</text>
+<rect x="490" y="50" width="200" height="92" rx="6" fill="#fdeee7" stroke="#eb6834"/><text x="590" y="75" text-anchor="middle" font-weight="bold">LLM（監督者）</text><text x="590" y="95" text-anchor="middle" font-size="10">技能が適用できない場合と</text><text x="590" y="109" text-anchor="middle" font-size="10">予測不一致後の行動を選択</text><text x="590" y="123" text-anchor="middle" font-size="10">action()を呼ぶPythonを生成</text>
+<rect x="262" y="190" width="176" height="44" rx="6" fill="#fff" stroke="#555"/><text x="350" y="210" text-anchor="middle" font-weight="bold">ゲーム（ARC-AGI-3）</text><text x="350" y="225" text-anchor="middle" font-size="10">決定論的、盤面を観測</text>
+<line x1="210" y1="56" x2="260" y2="85" stroke="#333" marker-end="url(#ar)"/><line x1="210" y1="136" x2="260" y2="109" stroke="#333" marker-end="url(#ar)"/><line x1="350" y1="142" x2="350" y2="188" stroke="#2a78d6" stroke-width="2" marker-end="url(#ar)"/><text x="180" y="179" font-size="9" fill="#2a78d6">技能が実行（生成トークン0）</text>
+<line x1="438" y1="96" x2="488" y2="96" stroke="#eb6834" stroke-width="2" marker-end="url(#ar)"/><text x="441" y="88" font-size="8" fill="#eb6834">制御を返す</text><path d="M590,142 L590,212 L440,212" fill="none" stroke="#eb6834" stroke-width="2" marker-end="url(#ar)"/><text x="595" y="175" font-size="10" fill="#eb6834">LLMが実行</text><path d="M640,50 L640,15 L110,15 L110,23" fill="none" stroke="#555" stroke-dasharray="4 3" marker-end="url(#ar)"/><text x="370" y="9" text-anchor="middle" font-size="9" fill="#555">実行間：成功手順を再生検証し、ライブラリへ登録</text></svg><figcaption><b>図1.</b> 共通の実行契約。2種類の技能は、適用条件を満たす場合に実行し、各手の結果を検証する。不一致を検出したら停止し、LLMへ制御を戻す。成功軌跡のライブラリへの登録は実行間に行う。ECAは型だけでなく、ゲートと3.2節の構成要素を含むミドルウェア全体を指す。</figcaption></figure>
+<h3>3.2　ECAの構成要素</h3>
+<p>ECAは、盤面の構成要素と行動による変化を解析し、技能に実行権限を与えるミドルウェアである。本稿はECA全体の評価ではなく、技能の実行・停止・再利用に関わる契約を対象とする。表2に実装の構成と使用箇所を示す。5節の実験は各条件のシステムを評価したものであり、表の全要素について単独効果を測ったものではない。</p>
+<table><caption><b>表2.</b> 本研究で使用したECAの構成要素。S1：提出56836939（ECAOD v1）、S2：提出57877794（失敗ノート版）、L：ローカル実験。認知機能との対応は設計上の類比である。</caption><thead><tr><th>構成要素</th><th>処理</th><th>契約での役割</th><th>類比</th><th>使用</th></tr></thead><tbody>
+<tr><td>型ごとの知覚</td><td>各型が盤面から駒、壁、軸、目標、部品などを抽出する。共通の知覚表現は要求しない。</td><td>予測に用いる状態の構成</td><td>知覚の分節</td><td>S1、S2、L</td></tr>
+<tr><td>型と認証</td><td>15のパラメータ付きモデル。構造に基づいて適用を判定し、成立・不成立の理由を保持する。</td><td>証拠との整合性の確認</td><td>運動スキーマ（Schmidt, 1975）</td><td>S1、S2、L</td></tr>
+<tr><td>ゲート</td><td>検出、審査、裁定、投影、検証の5段階。型の適用を調べ、1盤面あたり最大1つを選び、長さを制限した計画の先頭部分を実行する。各手で認証と計画の進行を確認する。</td><td>権限の付与・維持・取消し</td><td>監督制御（Norman &amp; Shallice, 1986）</td><td>S1、S2、L</td></tr>
+<tr><td>成績の台帳</td><td>型・エピソードごとに、レベル完了と権限取消しを記録する。実績に応じて権限長を1手、2手、4手、計画全体へ広げる。</td><td>実行範囲の設定</td><td>信頼性による調停（Daw et al., 2005）</td><td>S1、S2、L</td></tr>
+<tr><td>エピソードの型の記憶</td><td>型を座標に依存しないスキーマとして保持し、観測済み・支持・検証済みに分類する。検証済みの型は後続レベルで再結合した計画器に使い、支持のみの場合は範囲を限定した助言に使う。</td><td>レベル間の証拠の保持</td><td>スキーマの転移</td><td>S1、S2、L</td></tr>
+<tr><td>ホストノート</td><td>技能が実行した行動と、レベル開始盤面の位置をLLMに伝える。</td><td>制御の引き継ぎ</td><td>監督者への報告</td><td>S2、L</td></tr>
+<tr><td>失敗ノート</td><td>型のモデル、予測が外れた行動、予測と観測の差を伝える（付録B）。</td><td>停止内容の伝達</td><td>誤差信号</td><td>S2</td></tr>
+<tr><td>スケジューラ</td><td>レベル開始時と、レベルが変わらず20手経過した時点で走査する。同じ盤面は再評価しない。常時走査では1回1.5〜2秒、1手あたり1.3〜2.7回の走査が発生していた。</td><td>判定費用の制限</td><td>―</td><td>S1、S2、L</td></tr>
+<tr><td>事例ライブラリ</td><td>開始盤面と各行動後のハッシュを保存し、成功軌跡を再生する（3.3節）。</td><td>第2の技能源</td><td>事例の想起（Logan, 1988）</td><td>L（追加実験）</td></tr>
+</tbody></table>
+<p>判定は、適用根拠が不足する場合には実行を許可しない設計とした。また、型に与える権限の長さは、実行の記録に応じて調整する。技能が適用できる場合の結果を5節、適用できない場合や予測不一致の記録を5.6〜5.7節および6節で示す。</p>
+<h3>3.3　2種類の技能</h3>
+<p><b>型（mechanic family）。</b>公開ゲームを基に事前実装した15のパラメータ付きモデルである。stride_maze、sand_filter、program_execution、linked_extent、rule_rewrite、reflection_orbit、anchor_overlap、region_paint、shape_marker、hierarchical_slots、cycle_permutation、control_marker、mirrorなどを含む。レベルで観測した遷移にパラメータを合わせ、適用条件と予測を確認する。認証後は、多くの型で上限付き幅優先探索によって計画を求め、実行器が許可された先頭部分を1手ずつ実行する。本稿では、型は測定に用いる技能源であり、モデルの獲得方法として提案するものではない（1節）。</p>
+<p>提出カーネルでは、ツールボックスはレベル開始時と、レベルが変わらず20手経過した場合に動作し、同じ盤面を二度は評価しない。後の構成では、実行内容をホストノートでLLMへ通知する。型・計画器・実行器を合わせたものを「内蔵ソルバー」と呼ぶ。これはFranzenの元ノートブックではなく、本研究で追加した実装である。対照設定での担当は公開13レベル（ar25 L1〜3、cn04 L1〜2、re86 L1、s5i5 L1〜2、tn36 L1〜5）であり、5.2節ではこれらを評価対象とする。付録Bに具体例を示す。</p>
+<p><b>事例の再生（instance replay）。</b>エージェントの成功履歴を用いた追加実験であり、対応するKaggle提出には含めていない。各履歴をローカルエンジンで再生し、レベル単位に切り分ける。収集した候補から、規定の開始状態で完了する最短の手順を選び、再生で確認しながら短縮する。開始盤面と各行動後の盤面ハッシュを保存し、実行時にはそれらが一致する間だけ再生する。これは決定論的環境での検証付きキャッシュであり、評価するのは既知課題を保持することの効果である。軌跡はエージェント全体（LLMとソルバー）の実行から収集した。保存された46レベルのうち45は、いずれかの実行でLLMとソルバーの両方がクリアし、s5i5 L7のみLLMによる成功から追加された。</p>
+<h3>3.4　Kaggle提出</h3>
+<p><b>ECAOD v1（提出56836939）。</b>FranzenのMilestone 2ノートブックに、必要時のみ実行する型のツールボックスを追加した。同一カーネルの評価値は36.14、32.60、23.67（平均30.8）で、別の1実行は0.00だった。この実行のログは参加者から確認できず、0.00を含む平均は23.1となる。元のノートブックは29.69と27.58（平均28.6）だった。常時ツールボックスを走査する版は20.94で、認証が成立しないゲームでも1手あたり1.3〜2.7回、各1.5〜2秒の走査が発生した。反復数が少なく、0.00を除く同一カーネルの値にも約12点の幅があるため、非公開評価における改善は主張しない。</p>
+<p><b>失敗ノート版（提出57877794、30.68）。</b>後の構成（評価値29.58、28.10）に、不一致の内容をLLMへ伝える処理を追加した。型が3手以上の検証済み行動を実行した後に予測を外した場合、そのモデル、該当行動、予測と観測の差を通知する。どちらの提出も事例ライブラリは含まない。非公開ゲームごとの既存の再生手順は用意されていない。</p>
+<p><b>経緯。</b>2026年7月の提出54666986は、以前のハーネスとQwen3.6-27Bを用い、1つの型に認証済み行動の実行を委任した。プロンプトに助言文は追加していない。評価値は1.86で、当時の公開リーダーボードで1位だった。同時期の助言版は0.75、12種類の型と広い助言文を用いる版は0.42、LLMのみは0.90だった。ただし、1.86のカーネルを同じ決定論的設定で再実行した値は1.10であり、単発の高い値として扱う。後続のローカル比較では、助言条件はクリア0、4手の権限を与える実行条件は6セルすべてでレベルをクリアした。tu93では助言条件の1手あたり思考トークンが11.5倍だった。現在のハーネスでの比較は5.2節に示す。</p>
+
+<h2>4　関連研究</h2>
+<p><b>速い処理と遅い処理の切替え。</b>SwiftSage（Lin et al., 2023）、SOFAI（Booch et al., 2021）、AdaPlanner（Sun et al., 2023）、WebATLAS（Cheng et al., 2025）は、異なる処理経路やフィードバックを用いてLLMエージェントの行動を制御する。速い経路と推論経路を組み合わせること自体は、本研究の新規性ではない。本稿では、LLMを呼ばずに動く技能の適用条件と、予測不一致による停止を扱う。</p>
+<p><b>成功軌跡の保存と再生。</b>SkillDroid（Chen et al., 2026）はAndroidの成功軌跡を技能に変換し、LLMなしで再生する。各段階のUI状態を確認し、実行済みの段階を添えてLLMへ制御を戻す。照合には正規表現、埋め込み、LLMによる確認を用い、失敗の多い技能は再構築する。MobiMem（Liu et al., 2025）は手続き記憶を動機として行動履歴を再利用し、適用判定には埋め込み、要素照合にはあいまい一致を用いる。本研究では、決定論的環境で盤面ハッシュを用いて正確に照合し、モデルに基づく型と事例再生を共通の実行契約で扱う。その費用と適用範囲を競技用モデルで測定する。</p>
+<p><b>重みを更新しない技能ライブラリ。</b>Voyager（Wang et al., 2024）は、実行可能なコードを技能として保持し、LLMが検索・組合せを行う。本稿の5.2節は、同一の計画をLLMへ提示する場合と、実行器へ直接委任する場合を比較する。これはVoyager自体との費用比較ではない。</p>
+<p><b>ARC-AGI-3の世界モデル。</b>Schema（Zeng et al., 2026）は、確定した行動列を世界モデルによる毎手の点検とともに実行し、不一致時に推論へ戻る。Rodionov（2026）は実行可能な世界モデルの予測と観測が最初にずれた時点で停止する。Twin（Skoutnev et al., 2026）は記録済み遷移への適合を確認して実行し、Tycho（Lehmann et al., 2026）は描画される決定論的ムーア機械としてゲームを扱う。これらとの比較では、本研究の競技用モデル、実行予算、および実行間の事例再利用を区別する必要がある。</p>
+<p><b>実行時保証と技能の固定化。</b>Simplex（Sha, 2001）は、許可範囲を外れる高度な制御器から、検証済みの安全制御器へ切り替える。本研究の返却先はLLMであり、安全性の保証は異なる。学習結果の保持には、静的ARCでのテスト時学習（Akyürek et al., 2025）やSOAR（Pourcel et al., 2025）、推論を規則にまとめるSoarのチャンキング（Laird et al., 1986）などがある。</p>
+
+<h2>5　結果</h2>
+<p>表3に各実験の問いを示す。比較実験の事前登録と、記録済み軌跡の解析に用いた資料は付録Aにまとめた。特に断らない限り、結果は公開8ゲームのものである。</p>
+<table><caption><b>表3.</b> 評価項目と対応する節。</caption><thead><tr><th>評価項目</th><th>節</th></tr></thead><tbody><tr><td>推論を繰り返す費用と実行間のばらつき</td><td>5.1</td></tr><tr><td>同じ計画の助言と直接実行の比較</td><td>5.2</td></tr><tr><td>新しい成功から技能への登録</td><td>5.3</td></tr><tr><td>再生の一致と実行成績</td><td>5.4</td></tr><tr><td>逸脱後の途中状態からの再開</td><td>5.5</td></tr><tr><td>未見ゲームへの適用範囲</td><td>5.6、6</td></tr><tr><td>LLMによる遷移モデルの生成</td><td>5.7</td></tr></tbody></table>
+<h3>5.1　推論の費用と実行間のばらつき</h3>
+<p>実行ログから、行動間隔とトークン数を集計した。再生の1手は中央値0.24秒（p90：1.09秒、n = 5,666、ハッシュ検査込み）だった。LLMターンの先頭行動は、直前の行動から中央値46秒後（p90：227秒、n = 1,232）に実行され、そのターンの生成量は中央値3,300トークンだった。両者は行動間隔の測定であり、タスク全体の速度比ではない。1実行あたりの生成量は約180万トークンだった。</p>
+<p>同一設定の4実行（a1〜a4）のクリア数は37、37、33、36だった。一度以上クリアしたレベルは42、4実行すべてでクリアしたレベルは30であり、12レベルは実行によって成否が異なった。これは、事前に設定した「6レベル以上で成否が異なる」という予測を満たした。</p>
+<p>入力プロンプトは1リクエストあたり平均7.49万トークンだった。対照系の32ゲーム実行（30.9ゲーム時間）では、プロンプトの要約置換が144回発生した。置換直前の長さは中央値11.6万トークン、置換間隔は中央値20リクエストで、1ゲーム時間あたり4.66回に相当する。置換後のプロンプトには、それ以前の経験が要約として渡される。ソルバーを無効にした比較では、担当13レベルに1実行あたり36〜51万トークンを使用し、26レベル実行に対してクリア数は23および18だった。いずれもtn36 L5を越えなかった。</p>
+<h3>5.2　認証済み計画の助言と直接実行</h3>
+<p>同じ認証済み計画を、ソルバーが直接実行する条件と、LLMへ助言として渡す条件を比較した。</p>
+<figure><img src="fig/fig3_advice.png" alt="担当13レベルを誰が実行したかと、そのLLM生成トークン（権限条件4実行、助言条件2実行）"><figcaption><b>図2.</b> 権限条件4実行（a1〜a4）と助言条件2実行（v1、v2）における、ソルバー担当13レベル。左：各レベルを技能が実行したか（どの行動にもLLMトークンが帰属しない）、LLMが実行したか。右：LLMが実行したレベルの生成トークン。技能が実行したレベルは0である。斜線部はa3のs5i5 L2で、LLMはクリアできず、トークンは実行終了までを数えた。事前登録した比較はa1・a2対v1・v2で、a3・a4は追加の権限条件実行である。トークン数は実行行動に帰属させた集計で、下限値である。</figcaption></figure>
+<p>助言条件では、実行器が動く代わりに、計画の次の行動をLLMの次プロンプトへ提示した。提示文は、ハーネス自身は実行せず、従うかどうかはLLMが判断することを伝える。助言後に実行された最初の行動が計画と一致した場合を追従と数えた。追従率はv1で32/44（0.73）、v2で59/69（0.86）だった。</p>
+<p>事前登録した比較（a1・a2対v1・v2）では、担当13レベルはすべての実行でクリアされた。したがって、登録した判定規則では対象レベルのクリア数は同等だった。追加の権限条件a3・a4も含めると、52レベル実行のうち45はLLMターンなしで処理された。残る7件は認証が間に合わずLLMが担当し、6件をクリアした。s5i5 L2はa3で20ターンを費やして未クリア、a4では17ターンでクリアした。</p>
+<p>各ゲームで最後にクリアした担当レベルまでを数えると、権限条件4実行では4〜34 LLMターン、0.5〜14万生成トークン、合計10〜39ゲーム分を要した。この範囲には、クリアできなかったa3のs5i5 L2を含めていない。そのトークンを実行終了まで数えると、a3でLLMが担当したレベルの合計は30.9万トークンとなり、助言条件のどちらの実行よりも多かった（図2）。助言条件では全担当レベルにLLMターンが必要で、1実行あたり76または85ターン、23.5〜25.2万トークン、合計71〜90ゲーム分だった。全体のクリア数は権限条件で37、37、33、36、助言条件で35、31だった。対象レベルの費用には差があったが、全体のクリア数への効果は、この反復数では確定できない。</p>
+<p>助言は次の1手を示す約45トークンの1行で、型は各手の後に再計画する。観測された費用差は、長い助言文の追加よりも、行動選択をLLMに通す回数の違いに対応している。今回のモデルは多くの助言に従ったが、その場合も推論費用が発生した。7月の比較で見られた低い追従率だけでは、今回の費用差を説明できない。</p>
+<h3>5.3　新しい成功の技能登録</h3>
+<p>実行l2では、s5i5のL1〜L6を再生した後、LLMがライブラリ未登録のL7をクリアした。65手、LLM 19ターン、224,901生成トークン、46.5分を要した。人間の基準手数は86だった。成功履歴からL7を切り出し、再生で確認しながら61手に短縮して保存した。続くl3・l4ではL1〜L7の計226手を生成トークン0で再生し、すべての盤面ハッシュが一致した。新たに得られた成功を、次の実行でLLMを呼ばずに利用できた例である。</p>
+<h3>5.4　再生の一致と実行成績</h3>
+<figure><img src="fig/fig2_library.png" alt="対照とライブラリ条件のクリア数および生成トークン"><figcaption><b>図3.</b> 1実行あたりのクリア数と生成トークン。ctl1・ctl2は対照条件、l1・l2は45レベルを持つライブラリv1、l3・l4は46レベルを持つv2。トークン数はハーネスが記録した生成量の総数。</figcaption></figure>
+<p>再生は182回すべてで保存した観測列と一致した（45レベル×2実行、46レベル×2実行）。停止はなく、再生中の生成トークンは0だった。1実行あたりのクリア数は、対照の31・38（平均34.5）に対し、45・46・46・46となった。平均ゲームスコアは42.8から66.5、67.7へ、生成トークンは182万から138万、134万へ変化した。</p>
+<p>ライブラリの構成には、ホストノートのレベル修正とwarm-upのRESET修正も含まれる。このため、集計値はシステム構成間の比較として扱う。ただし、l1〜l4のクリアは、l2のs5i5 L7を除いてライブラリの再生によるものであり、再生の一致は直接確認した。それ以外のクリアはすべて盤面ごとに照合した再生であるため、2つの修正が再生以外に寄与しうるのは最大1レベルである。生成トークンの差には、3ゲームが再生後にLLMなしで終了した効果と、ハーネス修正の影響が含まれる。</p>
+<p>v2を用いたl3・l4では新しいレベルは追加されず、46レベルが両実行で再生された。この2実行で追加がなかったことは、以後の学習が不可能であることを意味しない。ここで確認したのは、収集済みの成功を、評価した反復実行で再現できたことである。</p>
+<h3>5.5　逸脱後の途中状態からの再開</h3>
+<p>各ゲームのライブラリ最終レベルで、手順の約半分を再生した後に行動を意図的に変更した。条件Rでは、最初の不一致で再生を止め、到達した盤面からLLMが続行する。条件Sでは対象レベルをライブラリから除き、LLMが開始盤面から解く。各条件は8レベル×2実行とした。</p>
+<p>16件すべてで、再生は設定した逸脱位置で停止した。Rは11/16、Sは7/16をクリアし、事前登録した差の基準（R − S ≥ 3）を満たした。クリアしたレベルの、引き継ぎまたは開始から完了までの中央値は、RでLLMによる41手・11.2万トークン・28分、Sで117手・15.7万トークン・35分だった。変更した行動が盤面を変えなかった場合は4/4、保存した経路とは異なる盤面へ進んだ場合は7/12をクリアした。</p>
+<p>Rには、技能が途中まで進めた状態を利用できるという差がある。この部分的再利用と即時停止を組み合わせた結果であり、引き継ぎノート単独の効果は切り分けていない。他の実験でも修復依頼の採用は5件中1件だった（表4）。RとSの差は、この標本では統計的に有意ではなかった（Fisherの正確検定、両側p = 0.29）。</p>
+<figure><img src="fig/fig4_handback.png" alt="逸脱後再開条件Rと開始状態から解く条件Sの比較"><figcaption><b>図4.</b> 逸脱後の再開（各条件8レベル×2実行）。Rは再生を不一致で止め、途中状態からLLMが再開する。SはLLMが開始状態から解く。行動数の中央値は各条件でクリアしたレベルのみを対象とする。</figcaption></figure>
+<h3>5.6　未見ゲームでの適用範囲</h3>
+<p>NV25では25ゲーム中2ゲームでmirrorの型が認証されたが、いずれも最初の1手で取消しとなり、クリアは得られなかった。arcintの8ゲームでは認証0件だった。LLMの代わりに観察と行動の巡回を行う単純な実行器を置いた比較では、型は公開ゲームで無作為行動より10レベル多くクリアしたが、NV25では増加しなかった。事例ライブラリには未見ゲームの登録がない。したがって、今回の未見33ゲームでは既存技能によるクリアは確認できなかった。Kaggleの非公開評価については、構成要素別の寄与を切り分けていない。</p>
+<p>RESETやゲームオーバー後に既存の手順を再利用する余地も調べた。再開後に同じ行動列の先頭部分を繰り返した割合は、モデルの全行動に対して公開ゲームで0.42%、NV25で0.31%だった。これは先頭部分の再生機会の測定であり、状態再訪全般の頻度ではない。ライブラリ実験では、再生後の20ゲーム実行、計19.1ゲーム時間の探索で、新たにクリアしたのはs5i5 L7の1レベルだった。</p>
+<h3>5.7　LLMによる遷移モデルの生成</h3>
+<p>事前登録したmodeler条件では、LLMがレベルの遷移関数<code>step</code>と目標判定<code>goal</code>をPythonで生成した。ハーネスは記録済み遷移でモデルを検証し、モデル上で計画を探索し、各手を確認しながら実行した。2実行で、集計対象レベルの90%に<code>step</code>が保持され、<code>step</code>を持つレベルの59%では記録上ほぼ正確だった。モデルと目標が正確な16レベルのうち8レベルで計画を発見し、ハーネス自身の198手で5レベルをクリアした。一方、全体のクリア数は、各条件2実行の合計で対照69から55へ減少した。</p>
+<p>91回の探索のうち49回では、記録済み遷移には整合するモデルの下で目標に到達する計画が得られなかった。実行した20計画のうち13は、未観測の状態へ進む最初の手で停止した。検証と計画を任意のツールとして提示した別条件では、利用はリクエストの2〜3%だった。</p>
+<p>観測済み遷移との整合性だけでは、未観測の遷移に対する予測精度は保証されない。今回の条件では、生成モデルの適用範囲の不足が主要な制約として観測された。ただし、検証・探索の費用や行動予算の配分とは切り分けていない。より強いモデルで世界モデルを合成・検証する研究は、公開セットで高い成績を報告している（Zeng et al., 2026; Skoutnev et al., 2026）。公開順位7位のKaggle参加者による競技後の報告（Sestak et al., 2026）は、LLMが書いた世界モデルを3通り試し、記録した遷移には当てはまるがクリア数は増えなかったと述べている。本稿で観測した傾向と同じである。本システムでも同様の改善が得られるかは、別途評価が必要である。</p>
+<p><b>停止後の修復。</b>ゲートは計画を最初の不一致で止めるため、停止のたびに反例（行動、予測した盤面、観測した盤面）が残る。modeler条件では、次のツール結果がこれをLLMに伝え、LLMは<code>step</code>を書き直すことができ、ハーネスは再び検証・探索・実行を行った。記録済みの2実行で、すべての停止をその後まで追跡した（事前登録した再解析で、新しい実行は行っていない）。13件の停止は5つのレベル試行の中で生じたもので、互いに独立ではない。ハーネスの各検査を、その時点で有効だった<code>step</code>の版に対応づけ、停止の後に定義された版だけを追った。モデル定義の時点をそれを含むリクエストで数えた最初の集計は、停止を起こした定義そのものを書き直しと数え得るため、この集計で置き換えた（付録A）。13件の停止のすべてで、その後に新しい版の<code>step</code>が定義された。9件では、ハーネスの準厳密の基準（判定した遷移の不一致が10%以下）で受理され計画も得られた版が続き、うち6件では記録済みの全遷移と一致する版が続いた。レベル試行の単位では、5試行中3試行でそのような版に到達した。2レベルでは、この連鎖がハーネスによるクリアで終わった。dc22 L1では3つの計画が停止し（4手、1手、11手の後。差分は48、4、4セル）、そのたびに定義された新しい版は記録済みの26、27、38遷移すべてと一致し、4つ目の2手の計画でクリアした。dc22 L2も2回の停止を経て同じ経過をたどった。どちらも同じ1実行のレベルで、事前実装の型の対象外である。所要はそれぞれ40手と72手で、LLMのみの対照は38/37手と82/72手、人間の基準は59手と102手だった。したがって、この連鎖はLLM単独で達成できることを再現したが、それを上回ってはいない。ls20 L3（停止5回）では、新しい版は準厳密の基準で受理されたが、全遷移と一致することはなく、クリアに至らなかった。ls20 L2（停止2回）では新しい版が受理されず、cn04 L3では再認証された計画が完了せずに終わった。モデルの不十分さと、検証・探索の費用の影響は切り分けていない。</p>
+
+<h2>6　停止記録に基づく分析</h2>
+<p>成否だけでは、失敗の原因を特定できない。実行契約では、技能が予測した結果と実際の観測を対応づけて記録する。表4は、観測された停止条件、考えられる原因、原因を切り分けるための情報、および関連する測定結果を整理したものである。原因の候補を絞るための記録であり、原因を一意に診断するものではない。</p>
+<table><caption><b>表4.</b> 停止条件、原因候補、切り分けに必要な情報。</caption><thead><tr><th>観測</th><th>原因候補</th><th>切り分ける情報</th><th>測定結果</th></tr></thead><tbody>
+<tr><td>開始盤面の登録なし／適用できる型なし</td><td>未見ゲーム・レベル、型の適用範囲</td><td>技能のカバー範囲</td><td>未見33ゲーム中31で認証0。再生後19.1ゲーム時間で新規1レベル。</td></tr>
+<tr><td>k手目の予測不一致</td><td>技能の誤り、隠れ状態の差、規則の変化</td><td>同一開始からの行動列、変化したマス</td><td>誤った認証2件を1手で取消し。意図的な逸脱16件すべてを所定位置で検出。</td></tr>
+<tr><td>同じ盤面・行動から異なる次盤面</td><td>盤面に含まれない内部状態や履歴</td><td>レベル番号、エンジン状態、履歴を加えた予測</td><td>反復キー13,300件の19.8%。レベル番号を加えても同数。6手以内の履歴で63%を標本内分割。別実行では83.7%対74.4%（649件、回答率40%）。</td></tr>
+<tr><td>レベル移行後の予測不一致</td><td>同じ行動の異なる効果、表現範囲外、誤適用、未見行動</td><td>効果の表現、物体の同一性</td><td>失敗1,112件の内訳：457、445、117、93。</td></tr>
+<tr><td>遷移は予測できるが完了計画なし</td><td>目標・物体表現、未観測遷移、探索範囲</td><td>完了判定の対象範囲、探索を省略した理由</td><td>既存の完了判定は114のクリア例で成立0。NV25は28レベル中20を省略し、8を計画してクリア0。</td></tr>
+<tr><td>ノート後に対応する行動が観測されない</td><td>通知内容、注意の配分</td><td>通知ごとの追従率</td><td>修復依頼の採用1/5。検証ツール利用2〜3%。助言への追従73〜86%。</td></tr>
+</tbody></table>
+<p><b>盤面表現の不足。</b>87実行、170,714遷移で、2回以上現れた（ゲーム、盤面、行動）のキー13,300件のうち2,635件が、複数の次盤面につながった。5ゲームで20〜49%、3ゲームではほぼ0だった。キーにレベル番号を加えても件数は変わらず、今回の曖昧さはレベル内で生じていた。</p>
+<p>過去6手までの行動履歴を加えると、曖昧なキーの63%を標本内で分割できた。ただし、すべての分岐が2件以上の観測で支持されるキーは10件にとどまる。別実行で評価した際、履歴付き予測器が回答した649件（対象の40%）で、正解率は83.7%だった。同じ649件における盤面だけの多数決は74.4%である。履歴追加による予測改善は確認できたが、一般的な隠れ状態の復元を示す結果ではない。</p>
+<p><b>レベル間の転移。</b>LLMを使わない効果テンプレート予測器をレベル1〜kに適合させ、レベルk+1で評価した。37レベル対、1,240遷移の厳密一致率は10.3%だった。不一致1,112件のうち445件は、テンプレートの表現範囲外の効果だった。この結果は、試した一般化方式の制約を示すもので、LLM自体の転移能力の測定ではない。</p>
+
+<h2>7　考察</h2>
+<h3>7.1　成功経験の保持と推論費用</h3>
+<p>対照エージェントは成功した履歴を参照できても、その履歴を次回に直接実行する手順へ変換しない。1リクエストあたり平均約7.5万の入力トークンを扱い、ソルバーを無効にした条件では、担当レベルに1実行あたり36〜51万の生成トークンを使用した。助言と権限の事前登録比較では、同じ担当レベルに要した時間は助言で平均約80ゲーム分、直接実行で約10ゲーム分だった。追加実行を含む範囲は5.2節に示した。</p>
+<p>既に観測した（盤面、行動）の組を再実行した割合は、旧ハーネスを用いたNV25で62%、現在のハーネスによる公開ゲームで1.4%だった。環境とハーネスが異なるため、この差を単一の要因に帰属させることはできない。履歴の解釈から実行手順への変換という点では、技能獲得段階（Fitts &amp; Posner, 1967）や知識の手続き化（Anderson, 1982）との対応が考えられるが、ここではシステム構成上の類比として扱う。</p>
+<p>今回の対照系には、実行間で新しい経験を実行可能な形で保持する経路がない。これは重みが固定されていることだけから生じる制約ではない。Voyagerのように重みを更新せず技能を保持する方式もある。重みの更新は別の選択肢だが、既習内容との干渉を扱う必要がある（McCloskey &amp; Cohen, 1989; Kirkpatrick et al., 2017）。</p>
+<p>また、実行中の履歴はコンテキスト長に制約され、今回の対照系では1ゲーム時間あたり4.66回の要約置換が発生した。長い文脈の利用に関する知見（Liu et al., 2024）は関連するが、本実験は要約による情報損失と失敗の因果関係を個別には検証していない。表5に、重み、文脈、技能ライブラリの役割を整理する。</p>
+<table><caption><b>表5.</b> 本システムで用いる3種類の記憶。</caption><thead><tr><th>記憶</th><th>保持範囲</th><th>利用時の測定・処理</th><th>照合</th><th>一般化</th></tr></thead><tbody>
+<tr><td>モデル重み</td><td>実行間で保持。テスト時は固定。</td><td>LLM推論</td><td>盤面の厳密照合には用いない。</td><td>事前学習による能力</td></tr>
+<tr><td>コンテキスト</td><td>実行内。1ゲーム時間に4.66回要約置換。</td><td>平均約7.5万入力トークン／リクエスト。先頭行動の間隔は中央値46秒。</td><td>要約を含む履歴をLLMが解釈する。</td><td>文脈内の適応</td></tr>
+<tr><td>技能（再生・型）</td><td>手順と実装を実行間で保持。</td><td>再生中の生成トークン0。再生1手は検査込み中央値0.24秒。</td><td>保存した観測列、または型の適用条件との照合。</td><td>再生は同一手順。型は定義した範囲。</td></tr>
+</tbody></table>
+<h3>7.2　技能獲得効率との関係</h3>
+<p>Chollet（2019）は知能を技能獲得効率の観点から論じている。本研究では、そのうち解を発見する過程と、得られた解を反復利用する過程を区別した。既知課題では、保存した成功の再生によって、対照平均34.5に対しライブラリv2で46レベルをクリアした。再生部分の生成トークンは0だったが、未解決レベルの探索費用は残る。</p>
+<p>この結果は同一課題の再利用を扱ったものであり、新しい課題へ技能を一般化する能力の実証ではない。成功軌跡から適用条件を持つ型を学ぶことは、今後の課題である。モデルがクリアしたレベルに限ると、人間手数／エージェント手数の比の中央値はL1〜L5で1.00、1.21、1.08、1.37、2.55だった。ただし、クリアできたレベルだけを集計した選択の影響があるため、これを人間との学習速度の比較とは解釈しない。</p>
+<h3>7.3　フィジカルAIへの適用</h3>
+<p>今回の契約は、予測不一致を観測した後に技能の実行を止める。誤った認証が1手で取り消された例でも、その1手は既に実行されている。行動の無害性や、LLMによる安全な回復を保証するものではない。物理系への適用には、行動前の許可判定と、安全に待機・退避する制御器を別途組み合わせる必要がある。</p>
+<p>連続値と観測ノイズを扱う場合、完全一致のハッシュ比較をそのまま適用できない。許容誤差を含む検証条件と状態推定が必要になる。確率性による再生の制約（Machado et al., 2018）もあり、本研究から直接移せるのは、適用範囲を定め、実行結果を監視して権限を取り消すという構成である。測定した0.24秒と46秒は今回のゲーム実行系の行動間隔であり、ロボットの制御周期を測った値ではない。</p>
+<h3>7.4　限界</h3>
+<p>ローカル比較は公開8ゲーム、各条件2〜4実行である。再生は既知の開始状態と手順に依存し、型の未見ゲームへの適用も限定的だった。NV25では25ゲーム中2ゲームで認証され、いずれも1手で取り消された。Kaggle評価は少数回で、同一カーネルにも大きなばらつきがあり、構成要素別の寄与は確定できない。</p>
+<p>ライブラリ比較には2つのハーネス修正が含まれるため、集計値の差を単一機能の効果とは扱わない。逸脱後の再開実験では、部分的に進んだ状態の効果とノートの効果を分離していない。履歴付き予測器の改善は、回答した40%の対象での結果である。残る60%では回答できず、状態修復は限定的である。5.7節の修復の分析は記録済み2実行の再解析であり、クリアした2レベルはLLM単独でもクリアできるレベルである。</p>
+
+<h2>8　結論</h2>
+<p>成功軌跡の再生と、認証されたゲーム規則モデルを、共通の実行契約で扱うミドルウェアを実装した。公開ゲームでは、保存した手順をLLMなしで再生し、182回のレベル再生すべてで観測列が一致した。事前登録したa1・a2とv1・v2の比較では、同じ対象レベルをクリアし、実行器へ直接委任する条件のLLMターン数と生成トークンが少なかった。ただし、追加実行a3では認証されなかったレベルをLLMが担当し、未クリア分を含む生成トークンは助言条件を上回った。費用削減は、技能が実際に適用された範囲と、適用できず推論へ戻る場合を分けて評価する必要がある。</p>
+<p>予測不一致を意図的に与えた16件では、すべて所定の位置で再生が停止した。途中状態からの再開は11/16、開始状態からの実行は7/16をクリアしたが、この標本で差は統計的に有意ではなく、引き継ぎノート単独の効果も確定していない。未見33ゲームでは既存技能によるクリアを得られなかった。LLMが書くモデルでは、ゲートの停止の後には必ず新しい版のモデルが定義された。停止のあった5レベル試行のうち3試行で記録済みの全遷移と一致する版に到達し、同じ1実行の2レベルではハーネスがLLM単独と同程度の手数でクリアした。対照を上回る性能は示していない。</p>
+<p>本研究が示したのは、既知課題の成功を検証付きの手順として再利用する効果と、その適用範囲である。今後は、成功軌跡から他の状態にも適用できる型を学習し、予測が外れた際に必要な状態表現の変更を選ぶ方法を検討する。次の段階として、6節の診断を5.7節の修復に戻すことが考えられる。停止記録が、盤面だけでは次盤面が決まらないことを示す場合、修復依頼では直近の行動を含む状態を求める。標本内では、これが該当事例の63%を分離した。実行契約は、その候補を監視付きで実行し、観測された予測不一致で停止するための基盤となる。</p>
+
+<h2>付録A　実験記録と再現性</h2>
+<table><thead><tr><th>実験・解析</th><th>記録（原則docs/）</th><th>ツール・出力</th></tr></thead><tbody>
+<tr><td>ライブラリ（5.3、5.4）</td><td>library_registration_2026-11-03</td><td>tools/library_harvest.py、research/solver_library/</td></tr><tr><td>権限・助言、安定性（5.2、5.1）</td><td>eca_advice_registration_2026-11-03</td><td>tools/advice_analysis.py、research/eca_advice/</td></tr><tr><td>逸脱（5.5）</td><td>library_divergence_registration_2026-11-03</td><td>tools/library_divergence.py</td></tr><tr><td>行動間隔、文脈、未解決課題（5.1、5.6）</td><td>paper_outline_v4_2026-11-03</td><td>tools/paper_measures.py、research/paper_measures/</td></tr><tr><td>未見ゲーム（5.6）</td><td>nv25_solver_coverage_2026-11-03、unknown_dev_eca_alone_2026-10-30</td><td>tools/nv25_solver_coverage.py</td></tr><tr><td>閉包の集計（6）</td><td>closure_census_registration_2026-11-03</td><td>tools/closure_census.py、research/closure_census/</td></tr><tr><td>実行内の反復（5.6、7.1）</td><td>within_run_repeats_registration_2026-11-03</td><td>tools/within_run_repeats.py</td></tr><tr><td>ソルバー無効（1、5.1）</td><td>ecaoff_registration_2026-11-02</td><td>tools/level_tokens_ecaoff.py</td></tr><tr><td>レベル間転移（6）</td><td>research/solver_library/transfer_v1.md</td><td>tools/transfer_measure.py</td></tr><tr><td>停止後の修復（5.7）</td><td>refine_chain_registration_2026-11-05</td><td>tools/refine_chain_v2.py（refine_chain.pyを置き換え）、research/refine_chain/</td></tr><tr><td>LLMによるモデル生成（5.7）</td><td>modeler_registration_2026-10-31、simplan_suppression_note_2026-10-29</td><td>tools/judge_modeler_colab.py、docs/modeler_colab_verdict_2026-10-31.txt</td></tr></tbody></table>
+<p class="note">対応する提出：<a href="https://www.kaggle.com/code/kojimatech/franzen-m2-ecaod-submit-20261005">56836939（ECAOD v1）</a>、<a href="https://www.kaggle.com/code/kojimatech/franzen-m2-failnote-s0-submit-20261101">57877794（失敗ノート版）</a>。ECAツールボックス、ハーネスのパッチ、解析コード、実験記録は、<a href="https://github.com/kojima123/eca-paper-release">github.com/kojima123/eca-paper-release</a>（MIT-0）で公開している。生の実行出力は含まない（NOTICEを参照）。本稿に記載したパスは、そのリポジトリ内の位置を示す。</p>
+<h2>付録B　型の実行と失効の例</h2>
+<p>失敗ノート条件f8のar25におけるreflection_orbitを示す。この型は、キー操作によるカーソルの1マス移動と、軸に対する反射位置の再計算をモデル化する。P<sub>ρ</sub>は、次のカーソル位置と、反射計画が実行した1手分だけ短くなることを予測する。軸と目標形状が引き続き観測できることを前提とし、カーソル位置、軸や目標の形状、再計算した残り計画が予測と一致しない場合に棄却する。カーソル・軸・目標のパラメータは盤面と観測遷移から取得し、このモデル上の探索によって計画を生成する。</p>
+<p>この実行では、型がLLMなしで81手を実行してL1〜L3をクリアした。L4では14手を検証した後、15手目のSPACEで予測不一致が生じた。型は周期操作を想定していたが、実際には(31,19)、(34,19)、…、(46,19)に白い1×1マスが6つ現れたため、権限を取り消した。次のLLMプロンプトには、モデル、前提、反証条件、該当行動、実際の変化を含むノートを渡し、成立していた部分を保ちながら不足を検討するよう求めた。これは6節の停止記録の一例であり、ノートの採用や修復成功を意味するものではない。</p>
+<h2>謝辞</h2>
+<p>本研究はDaniel FranzenのMilestone 2ノートブックとTufa LabsのDuckハーネスを用い、NVIDIAが公開したゲームでも評価した。実験、解析コード、原稿作成にはAIコーディングエージェント（AnthropicのClaude Code）の支援を受けた。今回の文章校正にはChatGPTを使用した。研究方針、実験・提出の判断、主張に関する責任は著者にある。実験数値は、付録Aのスクリプトと実行記録に基づく。</p>
+
+<h2>参考文献</h2>
+<ol class="refs">
+
+<li>Akyürek, E., Damani, M., Zweiger, A., et al. (2025). The surprising effectiveness of test-time training for few-shot learning. ICML 2025, PMLR 267, 942-963. arXiv:2411.07279.</li>
+<li>Anderson, J. R. (1982). Acquisition of cognitive skill. Psychological Review, 89(4), 369-406.</li>
+<li>ARC Prize Foundation (2026). ARC-AGI-3: A new challenge for frontier agentic intelligence. arXiv:2603.24621.</li>
+<li>ARC Prize (2026). ARC Prize 2026. https://arcprize.org/competitions/2026 (accessed 2026-11-03).</li>
+<li>Bessis, H., Cottaar, J., Pressman, I., Smit, D., Tešnar, M., Viel, S. (2026). Tufa Labs' winning solution for ARC-AGI-3 Milestone 1. Kaggle discussion 717133; notebook “Tufa Labs duck harness [June 30 milestone winner]”, kaggle.com/code/jeroencottaar; code github.com/Tufalabs/duck-harness.</li>
+<li>Booch, G., Fabiano, F., Horesh, L., et al. (2021). Thinking fast and slow in AI. AAAI, 35(17), 15042-15046.</li>
+<li>Chen, Q., Bellucci, A., Sun, Z., Jacucci, G. (2026). SkillDroid: Compile once, reuse forever. arXiv:2604.14872.</li>
+<li>Cheng, J., Kumar, A., Lal, R., et al. (2025). WebATLAS: An LLM agent with experience-driven memory and action simulation. NeurIPS 2025 Workshop on Language Agents and World Models. arXiv:2510.22732.</li>
+<li>Chollet, F. (2019). On the measure of intelligence. arXiv:1911.01547.</li>
+<li>Daw, N. D., Niv, Y., Dayan, P. (2005). Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioral control. Nature Neuroscience, 8(12), 1704-1711.</li>
+<li>Fitts, P. M., Posner, M. I. (1967). Human Performance. Belmont, CA: Brooks/Cole.</li>
+<li>Franzen, D. (2026). ARC-AGI-3 Milestone 2 Solution [Kaggle notebook]. kaggle.com/code/dfranzen/arc-agi-3-milestone-2-solution; code github.com/da-fr/arc-agi-3-solution.</li>
+<li>Kirkpatrick, J., Pascanu, R., Rabinowitz, N., et al. (2017). Overcoming catastrophic forgetting in neural networks. PNAS, 114(13), 3521-3526.</li>
+<li>Laird, J. E., Rosenbloom, P. S., Newell, A. (1986). Chunking in Soar: The anatomy of a general learning mechanism. Machine Learning, 1(1), 11-46.</li>
+<li>Lehmann, J., Aioanei, A., Vahdati, S. (2026). Tycho: Active abstraction with programmatic world models for ARC-AGI-3. arXiv:2607.28287.</li>
+<li>Lin, B. Y., Fu, Y., Yang, K., et al. (2023). SwiftSage: A generative agent with fast and slow thinking for complex interactive tasks. NeurIPS 36, 23813-23825.</li>
+<li>Liu, N. F., Lin, K., Hewitt, J., et al. (2024). Lost in the middle: How language models use long contexts. TACL, 12, 157-173.</li>
+<li>Liu, Z., Zhang, C., Zhao, X., et al. (2025). Beyond training: Enabling self-evolution of agents with MOBIMEM. arXiv:2512.15784.</li>
+<li>Logan, G. D. (1988). Toward an instance theory of automatization. Psychological Review, 95(4), 492-527.</li>
+<li>Machado, M. C., Bellemare, M. G., Talvitie, E., Veness, J., Hausknecht, M., Bowling, M. (2018). Revisiting the Arcade Learning Environment: Evaluation protocols and open problems for general agents. JAIR, 61, 523-562.</li>
+<li>McCloskey, M., Cohen, N. J. (1989). Catastrophic interference in connectionist networks: The sequential learning problem. Psychology of Learning and Motivation, 24, 109-165.</li>
+<li>Norman, D. A., Shallice, T. (1986). Attention to action: Willed and automatic control of behavior. In Davidson, Schwartz, Shapiro (Eds.), Consciousness and Self-Regulation, vol. 4, 1-18. New York: Plenum.</li>
+<li>Pourcel, J., Colas, C., Oudeyer, P.-Y. (2025). Self-improving language models for evolutionary program synthesis: A case study on ARC-AGI. ICML 2025, PMLR 267, 49659-49688.</li>
+<li>Rodionov, S. (2026). Executable world models for ARC-AGI-3 in the era of coding agents. AGI 2026, LNCS, 198-210. arXiv:2605.05138.</li>
+<li>Schmidt, R. A. (1975). A schema theory of discrete motor skill learning. Psychological Review, 82(4), 225-260.</li>
+<li>Sha, L. (2001). Using simplicity to control complexity. IEEE Software, 18(4), 20-28.</li>
+<li>Sestak, F., Aichberger, L., Ielanskyi, M., Klambauer, G. (2026). The last dance: short overview of a 7th-place ARC-AGI-3 entry. ARC Prize 2026 Kaggle discussion 756428, 2026-11-06.</li>
+<li>Skoutnev, A., Acharya, K., Longhitano, G., Udell, M., Ellis, K., Drori, I. (2026). Twin: Playing an unknown game with a test-time digital twin. arXiv:2608.14490.</li>
+<li>Sun, H., Zhuang, Y., Kong, L., Dai, B., Zhang, C. (2023). AdaPlanner: Adaptive planning from feedback with language models. NeurIPS 36, 58202-58245.</li>
+<li>Vaandrager, F., Garhewal, B., Rot, J., Wißmann, T. (2022). A new approach for active automata learning based on apartness. TACAS 2022, LNCS 13243, 223-243.</li>
+<li>Wang, G., Xie, Y., Jiang, Y., et al. (2024). Voyager: An open-ended embodied agent with large language models. TMLR. arXiv:2305.16291.</li>
+<li>Wolpert, D. M., Ghahramani, Z., Jordan, M. I. (1995). An internal model for sensorimotor integration. Science, 269(5232), 1880-1882.</li>
+<li>Yao, S., Shinn, N., Razavi, P., Narasimhan, K. (2025). Tau-bench (tau-bench): A benchmark for tool-agent-user interaction in real-world domains. ICLR 2025. arXiv:2406.12045.</li>
+<li>Zeng, G., Wang, J., Ma, W., et al. (2026). Schema: Discovering unknown environments via agentic program induction. arXiv:2609.39140; project report schema-harness.github.io (2026-07-15).</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,505 @@
+{
+ "source": "nv25",
+ "draws": 1,
+ "errors": [],
+ "pooled": {
+  "transitions": 7663,
+  "keys": 2914,
+  "repeated_keys": 148,
+  "broken_keys": 1,
+  "broken_share": 0.0068,
+  "transitions_on_broken": 2,
+  "repair_k": {
+   "None": 1
+  },
+  "repaired": 0,
+  "repaired_supported": 0
+ },
+ "heldout": {
+  "test_on_broken": 0,
+  "majority_acc": 0.0,
+  "suffix_answers": 0,
+  "suffix_coverage": 0.0,
+  "suffix_acc": 0.0,
+  "majority_acc_same_cases": 0.0
+ },
+ "per_game": {
+  "al7306": {
+   "transitions": 1327,
+   "keys": 89,
+   "repeated_keys": 6,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "cc2048": {
+   "transitions": 329,
+   "keys": 38,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "cg1842": {
+   "transitions": 263,
+   "keys": 150,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "cl0426": {
+   "transitions": 296,
+   "keys": 114,
+   "repeated_keys": 27,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "df4821": {
+   "transitions": 176,
+   "keys": 176,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "dl4827": {
+   "transitions": 264,
+   "keys": 94,
+   "repeated_keys": 9,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "fl5273": {
+   "transitions": 341,
+   "keys": 254,
+   "repeated_keys": 11,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "fw4821": {
+   "transitions": 271,
+   "keys": 51,
+   "repeated_keys": 1,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "gc4721": {
+   "transitions": 298,
+   "keys": 52,
+   "repeated_keys": 2,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "hr2048": {
+   "transitions": 389,
+   "keys": 53,
+   "repeated_keys": 11,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ll4821": {
+   "transitions": 133,
+   "keys": 133,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ma4173": {
+   "transitions": 507,
+   "keys": 38,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "mb2741": {
+   "transitions": 124,
+   "keys": 124,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ml2048": {
+   "transitions": 258,
+   "keys": 129,
+   "repeated_keys": 21,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "mt4926": {
+   "transitions": 237,
+   "keys": 231,
+   "repeated_keys": 4,
+   "broken_keys": 1,
+   "broken_share": 0.25,
+   "transitions_on_broken": 2,
+   "repair_k": {
+    "None": 1
+   },
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ne4172": {
+   "transitions": 161,
+   "keys": 29,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "os1842": {
+   "transitions": 82,
+   "keys": 82,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ps1842": {
+   "transitions": 75,
+   "keys": 75,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ps7413": {
+   "transitions": 356,
+   "keys": 356,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "rl2048": {
+   "transitions": 134,
+   "keys": 133,
+   "repeated_keys": 1,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "rs0427": {
+   "transitions": 381,
+   "keys": 11,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "sf2048": {
+   "transitions": 426,
+   "keys": 114,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "sl4821": {
+   "transitions": 71,
+   "keys": 71,
+   "repeated_keys": 0,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "ss6041": {
+   "transitions": 418,
+   "keys": 283,
+   "repeated_keys": 27,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "td4826": {
+   "transitions": 346,
+   "keys": 34,
+   "repeated_keys": 4,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  }
+ }
+}

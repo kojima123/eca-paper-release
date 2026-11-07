@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper below. Citation is requested, not a licence condition (the licence is MIT-0)."
+title: "When Can an Agent Act Without Thinking? Execution contracts and stop-record diagnostics for an LLM agent on ARC-AGI-3"
+authors:
+  - family-names: Kojima
+    given-names: Yuto
+date-released: 2026-11-05
+type: software
+license: MIT-0

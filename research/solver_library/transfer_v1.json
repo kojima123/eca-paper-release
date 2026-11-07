@@ -1,0 +1,927 @@
+{
+ "ar25-0c556536": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 0,
+    "objects": 5,
+    "misfit": 0.0017,
+    "size": 3,
+    "ox": 0,
+    "oy": 0
+   },
+   "motion": {
+    "method": "motion",
+    "size": 3,
+    "ox": 0,
+    "oy": 0,
+    "moves": 26
+   }
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 10,
+    "unseen_keys": 1,
+    "exact_model": 0.4,
+    "exact_nothing": 0.0,
+    "object_model": 0.7,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 1,
+     "effect outside the model class": 5,
+     "exact": 4
+    },
+    "goal": "terms: B 37 cells moved by (+3,+0); W 1x1 moved by (+3,+0); W 1x1 moved by (+9,+0); Y vanished; c changed shape",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 11,
+    "human_actions": 50,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 39,
+    "unseen_keys": 14,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 16,
+     "action key unseen": 7,
+     "other template than levels 1..k": 16
+    },
+    "goal": "terms: W 1x1 moved by (+3,+0)",
+    "goal_precision": 0.0,
+    "goal_recall": 0.0,
+    "library_actions": 40,
+    "human_actions": 75,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 21,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 13,
+     "other template than levels 1..k": 8
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 22,
+    "human_actions": 37,
+    "plan": null
+   },
+   {
+    "k": 4,
+    "next_level": 5,
+    "transitions": 27,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 20,
+     "other template than levels 1..k": 7
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 28,
+    "human_actions": 89,
+    "plan": null
+   },
+   {
+    "k": 5,
+    "next_level": 6,
+    "transitions": 52,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 28,
+     "other template than levels 1..k": 24
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 53,
+    "human_actions": 159,
+    "plan": null
+   },
+   {
+    "k": 6,
+    "next_level": 7,
+    "transitions": 36,
+    "unseen_keys": 2,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 27,
+     "other template than levels 1..k": 9
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 37,
+    "human_actions": 233,
+    "plan": null
+   },
+   {
+    "k": 7,
+    "next_level": 8,
+    "transitions": 46,
+    "unseen_keys": 3,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 25,
+     "action key unseen": 1,
+     "other template than levels 1..k": 20
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 47,
+    "human_actions": 73,
+    "plan": null
+   }
+  ]
+ },
+ "bp35-0a0ad940": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 9,
+    "objects": 13,
+    "misfit": 0.6478,
+    "size": 6,
+    "ox": 0,
+    "oy": 1
+   },
+   "motion": {
+    "method": "motion",
+    "size": 6,
+    "ox": 2,
+    "oy": 1,
+    "moves": 20
+   }
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 39,
+    "unseen_keys": 1,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.154,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 23,
+     "same template, applied wrong": 13,
+     "other template than levels 1..k": 3
+    },
+    "goal": "terms: P vanished; Y 2x1 moved by (+0,-6); b 6 cells moved by (+0,-6)",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 40,
+    "human_actions": 48,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 33,
+    "unseen_keys": 13,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.212,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 20,
+     "same template, applied wrong": 12,
+     "other template than levels 1..k": 1
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 34,
+    "human_actions": 44,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 22,
+    "unseen_keys": 3,
+    "exact_model": 0.045,
+    "exact_nothing": 0.045,
+    "object_model": 0.364,
+    "object_nothing": 0.045,
+    "why": {
+     "effect outside the model class": 12,
+     "same template, applied wrong": 8,
+     "exact": 1,
+     "action key unseen": 1
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 23,
+    "human_actions": 38,
+    "plan": null
+   }
+  ]
+ },
+ "cn04-2fe56bfb": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 27,
+    "objects": 33,
+    "misfit": 0.1302,
+    "size": 3,
+    "ox": 2,
+    "oy": 2
+   },
+   "motion": {
+    "method": "motion",
+    "size": 3,
+    "ox": 2,
+    "oy": 2,
+    "moves": 11
+   }
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 28,
+    "unseen_keys": 11,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 14,
+     "effect outside the model class": 5,
+     "action key unseen": 9
+    },
+    "goal": "terms: G appeared; R vanished; W 135 cells moved by (+3,+0)",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 29,
+    "human_actions": 54,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 23,
+    "unseen_keys": 3,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 4,
+     "other template than levels 1..k": 19
+    },
+    "goal": "terms: G appeared; R vanished",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 24,
+    "human_actions": 85,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 28,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 19,
+     "effect outside the model class": 9
+    },
+    "goal": "terms: G appeared; R vanished",
+    "goal_precision": 0.25,
+    "goal_recall": 1.0,
+    "library_actions": 29,
+    "human_actions": 300,
+    "plan": null
+   },
+   {
+    "k": 4,
+    "next_level": 5,
+    "transitions": 43,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 15,
+     "other template than levels 1..k": 28
+    },
+    "goal": "terms: G appeared; R vanished",
+    "goal_precision": 0.2,
+    "goal_recall": 1.0,
+    "library_actions": 44,
+    "human_actions": 208,
+    "plan": null
+   },
+   {
+    "k": 5,
+    "next_level": 6,
+    "transitions": 37,
+    "unseen_keys": 1,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 26,
+     "effect outside the model class": 11
+    },
+    "goal": "terms: G appeared; R vanished",
+    "goal_precision": 0.25,
+    "goal_recall": 1.0,
+    "library_actions": 38,
+    "human_actions": 113,
+    "plan": null
+   }
+  ]
+ },
+ "dc22-fdcac232": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 80,
+    "objects": 87,
+    "misfit": 0.7256,
+    "size": 6,
+    "ox": 0,
+    "oy": 4
+   },
+   "motion": {
+    "method": "motion",
+    "size": 2,
+    "ox": 0,
+    "oy": 0,
+    "moves": 26
+   }
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 43,
+    "unseen_keys": 14,
+    "exact_model": 0.163,
+    "exact_nothing": 0.0,
+    "object_model": 0.163,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 5,
+     "action key unseen": 11,
+     "same template, applied wrong": 20,
+     "exact": 7
+    },
+    "goal": "filled relation",
+    "goal_precision": 0.167,
+    "goal_recall": 1.0,
+    "library_actions": 44,
+    "human_actions": 102,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 49,
+    "unseen_keys": 14,
+    "exact_model": 0.224,
+    "exact_nothing": 0.041,
+    "object_model": 0.224,
+    "object_nothing": 0.041,
+    "why": {
+     "other template than levels 1..k": 7,
+     "effect outside the model class": 4,
+     "exact": 11,
+     "action key unseen": 12,
+     "same template, applied wrong": 15
+    },
+    "goal": "filled relation",
+    "goal_precision": 0.111,
+    "goal_recall": 1.0,
+    "library_actions": 50,
+    "human_actions": 67,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 61,
+    "unseen_keys": 10,
+    "exact_model": 0.131,
+    "exact_nothing": 0.0,
+    "object_model": 0.131,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 14,
+     "same template, applied wrong": 32,
+     "exact": 8,
+     "other template than levels 1..k": 3,
+     "action key unseen": 4
+    },
+    "goal": "filled relation",
+    "goal_precision": 0.111,
+    "goal_recall": 1.0,
+    "library_actions": 62,
+    "human_actions": 98,
+    "plan": null
+   }
+  ]
+ },
+ "ls20-9607627b": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 5,
+    "objects": 10,
+    "misfit": 0.434,
+    "size": 5,
+    "ox": 4,
+    "oy": 0
+   },
+   "motion": {
+    "method": "motion",
+    "size": 5,
+    "ox": 4,
+    "oy": 0,
+    "moves": 35
+   }
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 44,
+    "unseen_keys": 14,
+    "exact_model": 0.568,
+    "exact_nothing": 0.0,
+    "object_model": 0.568,
+    "object_nothing": 0.0,
+    "why": {
+     "exact": 25,
+     "action key unseen": 12,
+     "effect outside the model class": 3,
+     "same template, applied wrong": 4
+    },
+    "goal": "terms: B changed shape; O 2x5 moved by (-5,+0); b 3x5 moved by (-5,+0); b vanished",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 45,
+    "human_actions": 123,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 40,
+    "unseen_keys": 0,
+    "exact_model": 0.775,
+    "exact_nothing": 0.0,
+    "object_model": 0.775,
+    "object_nothing": 0.0,
+    "why": {
+     "exact": 31,
+     "other template than levels 1..k": 2,
+     "same template, applied wrong": 5,
+     "effect outside the model class": 2
+    },
+    "goal": "terms: B changed shape; b vanished",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 41,
+    "human_actions": 73,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 53,
+    "unseen_keys": 0,
+    "exact_model": 0.717,
+    "exact_nothing": 0.057,
+    "object_model": 0.717,
+    "object_nothing": 0.057,
+    "why": {
+     "exact": 38,
+     "other template than levels 1..k": 6,
+     "same template, applied wrong": 8,
+     "effect outside the model class": 1
+    },
+    "goal": "terms: B changed shape; b vanished",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 54,
+    "human_actions": 84,
+    "plan": null
+   }
+  ]
+ },
+ "re86-8af5384d": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 4,
+    "objects": 9,
+    "misfit": 0.4314,
+    "size": 4,
+    "ox": 1,
+    "oy": 3
+   },
+   "motion": {
+    "method": "motion",
+    "size": 3,
+    "ox": 0,
+    "oy": 0,
+    "moves": 21
+   }
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 35,
+    "unseen_keys": 11,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 7,
+     "other template than levels 1..k": 20,
+     "action key unseen": 8
+    },
+    "goal": "terms: W 1x1 moved by (-3,+0); Y 11x1 moved by (-3,+0); Y 1x11 moved by (-3,+0); Y vanished; c vanished",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 36,
+    "human_actions": 42,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 46,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 26,
+     "effect outside the model class": 20
+    },
+    "goal": "terms: c vanished",
+    "goal_precision": 0.0,
+    "goal_recall": 0.0,
+    "library_actions": 47,
+    "human_actions": 86,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 41,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 27,
+     "effect outside the model class": 14
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 42,
+    "human_actions": 108,
+    "plan": null
+   },
+   {
+    "k": 4,
+    "next_level": 5,
+    "transitions": 64,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 47,
+     "effect outside the model class": 17
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 65,
+    "human_actions": 189,
+    "plan": null
+   },
+   {
+    "k": 5,
+    "next_level": 6,
+    "transitions": 52,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 45,
+     "effect outside the model class": 7
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 53,
+    "human_actions": 139,
+    "plan": null
+   }
+  ]
+ },
+ "s5i5-18d95033": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 0,
+    "objects": 0,
+    "misfit": 0.291,
+    "size": 3,
+    "ox": 0,
+    "oy": 0
+   },
+   "motion": null
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 25,
+    "unseen_keys": 5,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 20,
+     "action key unseen": 5
+    },
+    "goal": "terms: Y appeared; r appeared; r vanished",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 26,
+    "human_actions": 89,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 36,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 21,
+     "effect outside the model class": 15
+    },
+    "goal": "terms: r appeared; r vanished",
+    "goal_precision": 0.5,
+    "goal_recall": 1.0,
+    "library_actions": 37,
+    "human_actions": 106,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 32,
+    "unseen_keys": 32,
+    "exact_model": 0.031,
+    "exact_nothing": 0.031,
+    "object_model": 0.031,
+    "object_nothing": 0.031,
+    "why": {
+     "action key unseen": 22,
+     "effect outside the model class": 9,
+     "exact": 1
+    },
+    "goal": "terms: r appeared; r vanished",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 33,
+    "human_actions": 54,
+    "plan": null
+   },
+   {
+    "k": 4,
+    "next_level": 5,
+    "transitions": 29,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "other template than levels 1..k": 21,
+     "effect outside the model class": 8
+    },
+    "goal": "terms: r appeared; r vanished",
+    "goal_precision": 0.0,
+    "goal_recall": 0.0,
+    "library_actions": 30,
+    "human_actions": 162,
+    "plan": null
+   },
+   {
+    "k": 5,
+    "next_level": 6,
+    "transitions": 25,
+    "unseen_keys": 5,
+    "exact_model": 0.08,
+    "exact_nothing": 0.08,
+    "object_model": 0.08,
+    "object_nothing": 0.08,
+    "why": {
+     "other template than levels 1..k": 16,
+     "exact": 2,
+     "effect outside the model class": 7
+    },
+    "goal": "none",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 26,
+    "human_actions": 38,
+    "plan": null
+   }
+  ]
+ },
+ "tn36-ef4dde99": {
+  "coarse_grid": {
+   "combined": {
+    "method": "combined",
+    "fit": 184,
+    "objects": 189,
+    "misfit": 0.1534,
+    "size": 4,
+    "ox": 2,
+    "oy": 1
+   },
+   "motion": null
+  },
+  "pairs": [
+   {
+    "k": 1,
+    "next_level": 2,
+    "transitions": 8,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 8
+    },
+    "goal": "filled relation",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 9,
+    "human_actions": 72,
+    "plan": null
+   },
+   {
+    "k": 2,
+    "next_level": 3,
+    "transitions": 8,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 8
+    },
+    "goal": "filled relation",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 9,
+    "human_actions": 26,
+    "plan": null
+   },
+   {
+    "k": 3,
+    "next_level": 4,
+    "transitions": 11,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 11
+    },
+    "goal": "filled relation",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 12,
+    "human_actions": 40,
+    "plan": null
+   },
+   {
+    "k": 4,
+    "next_level": 5,
+    "transitions": 15,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 15
+    },
+    "goal": "filled relation",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 16,
+    "human_actions": 30,
+    "plan": null
+   },
+   {
+    "k": 5,
+    "next_level": 6,
+    "transitions": 20,
+    "unseen_keys": 7,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 19,
+     "action key unseen": 1
+    },
+    "goal": "filled relation",
+    "goal_precision": 1.0,
+    "goal_recall": 1.0,
+    "library_actions": 21,
+    "human_actions": 55,
+    "plan": null
+   },
+   {
+    "k": 6,
+    "next_level": 7,
+    "transitions": 19,
+    "unseen_keys": 0,
+    "exact_model": 0.0,
+    "exact_nothing": 0.0,
+    "object_model": 0.0,
+    "object_nothing": 0.0,
+    "why": {
+     "effect outside the model class": 18,
+     "other template than levels 1..k": 1
+    },
+    "goal": "filled relation",
+    "goal_precision": null,
+    "goal_recall": 0.0,
+    "library_actions": 20,
+    "human_actions": 62,
+    "plan": null
+   }
+  ]
+ }
+}

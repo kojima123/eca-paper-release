@@ -1,0 +1,26 @@
+read 0 F:/arc-agi3-evidence-archive/simplan2/out_unseen_nv25/benchmark.json 7663
+{
+ "pooled": {
+  "transitions": 7663,
+  "keys": 2914,
+  "repeated_keys": 148,
+  "broken_keys": 1,
+  "broken_share": 0.0068,
+  "transitions_on_broken": 2,
+  "repair_k": {
+   "None": 1
+  },
+  "repaired": 0,
+  "repaired_supported": 0
+ },
+ "heldout": {
+  "test_on_broken": 0,
+  "majority_acc": 0.0,
+  "suffix_answers": 0,
+  "suffix_coverage": 0.0,
+  "suffix_acc": 0.0,
+  "majority_acc_same_cases": 0.0
+ },
+ "errors": 0
+}
+CLOSURE_CENSUS_DONE nv25

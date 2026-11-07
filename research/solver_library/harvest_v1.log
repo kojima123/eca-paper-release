@@ -1,0 +1,129 @@
+read E:/arc-agi3-online-specialists-runs-e/adapt_runs/a1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/adapt_runs/a2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h3/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/anchorhidden_runs/h4/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/bigboard_runs/b1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/bigboard_runs/b2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/cover_runs/k1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/cover_runs/k2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/a1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/a2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/b1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/ecaoff_runs/b2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/effects_runs/e1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/effects_runs/e2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain2_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain2_runs/ctl1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain2_runs/ctl2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain_runs/arm2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain_runs/ctl1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/explain_runs/ctl2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f10/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f11/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f12/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f15/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f16/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f3/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f4/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f5/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f6/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f7/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f8/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/f9/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/r1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/failnote_runs/r2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/fixes_runs/x3/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/fixes_runs/x4/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/free_runs/f1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/free_runs/f2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/handoff_runs/n1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/handoff_runs/n2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/idle2_runs/j1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/idle2_runs/j2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/idle_runs/i1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/idle_runs/i2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/keystall_runs/k1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/keystall_runs/k2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/modeler_runs/m1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/modeler_runs/m2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/nowait_runs/n1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/nowait_runs/n2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/proven_runs/p1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/proven_runs/p2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/sheet_runs/h1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/sheet_runs/h2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinv_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinv_runs/arm2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/c1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/c2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/d1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/d2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/g1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/g2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/s1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/stinvg_runs/s2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/surprise_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/surprise_runs/arm2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/sweep_runs/p1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/sweep_runs/p2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/t3_runs/t1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/t3_runs/t2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/think_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/think_runs/arm2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/thinkad_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/thinkad_runs/arm2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/thinkan_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/thinkan_runs/arm2/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/thinkst_runs/arm1/out_canon/benchmark.json
+read E:/arc-agi3-online-specialists-runs-e/thinkst_runs/arm2/out_canon/benchmark.json
+ar25-0c556536 L1 draws 83 (model 12), best 15 -> 15 actions, human 32
+ar25-0c556536 L2 draws 83 (model 4), best 11 -> 11 actions, human 50
+ar25-0c556536 L3 draws 83 (model 5), best 40 -> 40 actions, human 75
+ar25-0c556536 L4 draws 83 (model 83), best 22 -> 22 actions, human 37
+ar25-0c556536 L5 draws 82 (model 82), best 28 -> 28 actions, human 89
+ar25-0c556536 L6 draws 79 (model 79), best 53 -> 53 actions, human 159
+ar25-0c556536 L7 draws 68 (model 68), best 37 -> 37 actions, human 233
+ar25-0c556536 L8 draws 64 (model 64), best 47 -> 47 actions, human 73
+bp35-0a0ad940 L1 draws 83 (model 83), best 15 -> 15 actions, human 21
+bp35-0a0ad940 L2 draws 40 (model 40), best 40 -> 40 actions, human 48
+bp35-0a0ad940 L3 draws 6 (model 6), best 34 -> 34 actions, human 44
+bp35-0a0ad940 L4 draws 1 (model 1), best 23 -> 23 actions, human 38
+cn04-2fe56bfb L1 draws 83 (model 13), best 14 -> 14 actions, human 29
+cn04-2fe56bfb L2 draws 83 (model 4), best 29 -> 29 actions, human 54
+cn04-2fe56bfb L3 draws 61 (model 58), best 24 -> 24 actions, human 85
+cn04-2fe56bfb L4 draws 50 (model 47), best 29 -> 29 actions, human 300
+cn04-2fe56bfb L5 draws 19 (model 17), best 44 -> 44 actions, human 208
+cn04-2fe56bfb L6 draws 7 (model 5), best 38 -> 38 actions, human 113
+dc22-fdcac232 L1 draws 82 (model 82), best 20 -> 20 actions, human 59
+dc22-fdcac232 L2 draws 82 (model 82), best 44 -> 44 actions, human 102
+dc22-fdcac232 L3 draws 77 (model 77), best 50 -> 50 actions, human 67
+dc22-fdcac232 L4 draws 59 (model 59), best 62 -> 62 actions, human 98
+ls20-9607627b L1 draws 83 (model 83), best 13 -> 13 actions, human 22
+ls20-9607627b L2 draws 81 (model 81), best 45 -> 45 actions, human 123
+ls20-9607627b L3 draws 69 (model 69), best 41 -> 41 actions, human 73
+ls20-9607627b L4 draws 36 (model 36), best 54 -> 54 actions, human 84
+re86-8af5384d L1 draws 83 (model 6), best 20 -> 20 actions, human 26
+re86-8af5384d L2 draws 83 (model 7), best 36 -> 36 actions, human 42
+re86-8af5384d L3 draws 83 (model 8), best 47 -> 47 actions, human 86
+re86-8af5384d L4 draws 83 (model 5), best 42 -> 42 actions, human 108
+re86-8af5384d L5 draws 73 (model 73), best 65 -> 65 actions, human 189
+re86-8af5384d L6 draws 36 (model 36), best 53 -> 53 actions, human 139
+s5i5-18d95033 L1 draws 83 (model 18), best 13 -> 13 actions, human 20
+s5i5-18d95033 L2 draws 81 (model 29), best 26 -> 26 actions, human 89
+s5i5-18d95033 L3 draws 47 (model 46), best 37 -> 37 actions, human 106
+s5i5-18d95033 L4 draws 14 (model 14), best 33 -> 33 actions, human 54
+s5i5-18d95033 L5 draws 10 (model 10), best 30 -> 30 actions, human 162
+s5i5-18d95033 L6 draws 5 (model 5), best 26 -> 26 actions, human 38
+tn36-ef4dde99 L1 draws 82 (model 14), best 7 -> 7 actions, human 32
+tn36-ef4dde99 L2 draws 80 (model 4), best 9 -> 9 actions, human 72
+tn36-ef4dde99 L3 draws 79 (model 7), best 9 -> 9 actions, human 26
+tn36-ef4dde99 L4 draws 77 (model 5), best 12 -> 12 actions, human 40
+tn36-ef4dde99 L5 draws 76 (model 3), best 16 -> 16 actions, human 30
+tn36-ef4dde99 L6 draws 43 (model 43), best 21 -> 21 actions, human 55
+tn36-ef4dde99 L7 draws 21 (model 21), best 20 -> 20 actions, human 62
+LIBRARY_WRITTEN F:/arc-agi3-online-specialists-20261014/research/solver_library/library_v1.json 45 levels; replay mismatches 0

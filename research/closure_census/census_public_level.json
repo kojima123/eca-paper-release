@@ -1,0 +1,234 @@
+{
+ "source": "public",
+ "state": "level",
+ "draws": 87,
+ "errors": [],
+ "pooled": {
+  "transitions": 170714,
+  "keys": 93794,
+  "repeated_keys": 13300,
+  "broken_keys": 2635,
+  "broken_share": 0.1981,
+  "transitions_on_broken": 9275,
+  "repair_k": {
+   "1": 560,
+   "2": 301,
+   "3": 308,
+   "4": 210,
+   "5": 156,
+   "6": 138,
+   "None": 962
+  },
+  "repaired": 1673,
+  "repaired_supported": 10
+ },
+ "heldout": {
+  "test_on_broken": 1616,
+  "majority_acc": 0.6764,
+  "suffix_answers": 649,
+  "suffix_coverage": 0.4016,
+  "suffix_acc": 0.8367,
+  "majority_acc_same_cases": 0.7442
+ },
+ "per_game": {
+  "ar25-0": {
+   "transitions": 23195,
+   "keys": 8200,
+   "repeated_keys": 1974,
+   "broken_keys": 0,
+   "broken_share": 0.0,
+   "transitions_on_broken": 0,
+   "repair_k": {},
+   "repaired": 0,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 0,
+    "majority_acc": 0.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "bp35-0": {
+   "transitions": 9303,
+   "keys": 5034,
+   "repeated_keys": 981,
+   "broken_keys": 9,
+   "broken_share": 0.0092,
+   "transitions_on_broken": 22,
+   "repair_k": {
+    "1": 6,
+    "2": 3
+   },
+   "repaired": 9,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 4,
+    "majority_acc": 0.5,
+    "suffix_answers": 2,
+    "suffix_coverage": 0.5,
+    "suffix_acc": 1.0,
+    "majority_acc_same_cases": 1.0
+   }
+  },
+  "cn04-2": {
+   "transitions": 15748,
+   "keys": 10082,
+   "repeated_keys": 1048,
+   "broken_keys": 353,
+   "broken_share": 0.3368,
+   "transitions_on_broken": 994,
+   "repair_k": {
+    "1": 50,
+    "2": 27,
+    "3": 30,
+    "4": 36,
+    "5": 27,
+    "6": 20,
+    "None": 163
+   },
+   "repaired": 190,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 99,
+    "majority_acc": 0.596,
+    "suffix_answers": 30,
+    "suffix_coverage": 0.303,
+    "suffix_acc": 0.7667,
+    "majority_acc_same_cases": 0.8
+   }
+  },
+  "dc22-f": {
+   "transitions": 26597,
+   "keys": 18592,
+   "repeated_keys": 3358,
+   "broken_keys": 1652,
+   "broken_share": 0.492,
+   "transitions_on_broken": 6019,
+   "repair_k": {
+    "1": 342,
+    "2": 212,
+    "3": 203,
+    "4": 137,
+    "5": 99,
+    "6": 88,
+    "None": 571
+   },
+   "repaired": 1081,
+   "repaired_supported": 3,
+   "heldout": {
+    "test_on_broken": 1251,
+    "majority_acc": 0.6483,
+    "suffix_answers": 422,
+    "suffix_coverage": 0.3373,
+    "suffix_acc": 0.8033,
+    "majority_acc_same_cases": 0.6991
+   }
+  },
+  "ls20-9": {
+   "transitions": 30608,
+   "keys": 10330,
+   "repeated_keys": 3370,
+   "broken_keys": 11,
+   "broken_share": 0.0033,
+   "transitions_on_broken": 28,
+   "repair_k": {
+    "3": 1,
+    "5": 2,
+    "None": 8
+   },
+   "repaired": 3,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 3,
+    "majority_acc": 1.0,
+    "suffix_answers": 0,
+    "suffix_coverage": 0.0,
+    "suffix_acc": 0.0,
+    "majority_acc_same_cases": 0.0
+   }
+  },
+  "re86-8": {
+   "transitions": 32793,
+   "keys": 18703,
+   "repeated_keys": 1340,
+   "broken_keys": 275,
+   "broken_share": 0.2052,
+   "transitions_on_broken": 832,
+   "repair_k": {
+    "1": 44,
+    "2": 26,
+    "3": 36,
+    "4": 17,
+    "5": 15,
+    "6": 20,
+    "None": 117
+   },
+   "repaired": 158,
+   "repaired_supported": 7,
+   "heldout": {
+    "test_on_broken": 127,
+    "majority_acc": 0.8425,
+    "suffix_answers": 85,
+    "suffix_coverage": 0.6693,
+    "suffix_acc": 0.9529,
+    "majority_acc_same_cases": 0.8235
+   }
+  },
+  "s5i5-1": {
+   "transitions": 12799,
+   "keys": 9020,
+   "repeated_keys": 747,
+   "broken_keys": 213,
+   "broken_share": 0.2851,
+   "transitions_on_broken": 603,
+   "repair_k": {
+    "1": 57,
+    "2": 11,
+    "3": 24,
+    "4": 13,
+    "5": 6,
+    "6": 6,
+    "None": 96
+   },
+   "repaired": 117,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 92,
+    "majority_acc": 0.9239,
+    "suffix_answers": 74,
+    "suffix_coverage": 0.8043,
+    "suffix_acc": 0.9595,
+    "majority_acc_same_cases": 0.9324
+   }
+  },
+  "tn36-e": {
+   "transitions": 19671,
+   "keys": 13833,
+   "repeated_keys": 482,
+   "broken_keys": 122,
+   "broken_share": 0.2531,
+   "transitions_on_broken": 777,
+   "repair_k": {
+    "1": 61,
+    "2": 22,
+    "3": 14,
+    "4": 7,
+    "5": 7,
+    "6": 4,
+    "None": 7
+   },
+   "repaired": 115,
+   "repaired_supported": 0,
+   "heldout": {
+    "test_on_broken": 40,
+    "majority_acc": 0.65,
+    "suffix_answers": 36,
+    "suffix_coverage": 0.9,
+    "suffix_acc": 0.75,
+    "majority_acc_same_cases": 0.6389
+   }
+  }
+ }
+}

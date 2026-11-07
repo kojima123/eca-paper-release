@@ -1,0 +1,268 @@
+{
+ "library_replay_interval_s": {
+  "n": 5666,
+  "median": 0.243,
+  "p90": 1.09,
+  "mean": 0.935
+ },
+ "llm_turn_interval_s_l1-4_ctl1-2": {
+  "n": 1232,
+  "median": 46.037,
+  "p90": 227.149,
+  "mean": 91.388
+ },
+ "llm_turn_interval_s_ctl1-2": {
+  "n": 610,
+  "median": 39.82,
+  "p90": 197.576,
+  "mean": 82.121
+ },
+ "generated_tokens_per_llm_turn": {
+  "n": 1232,
+  "median": 3342,
+  "p90": 18799,
+  "mean": 6950.032
+ },
+ "context": {
+  "draws": [
+   "ctl1",
+   "ctl2",
+   "f15",
+   "f16"
+  ],
+  "game_runs": 32,
+  "game_hours": 30.88,
+  "prompt_tokens_per_request": {
+   "n": 3440,
+   "median": 77587,
+   "p90": 109642,
+   "mean": 74870.691
+  },
+  "drains": 144,
+  "drains_per_game_hour": 4.66,
+  "requests_between_drains": {
+   "n": 144,
+   "median": 20,
+   "p90": 36,
+   "mean": 21.41
+  },
+  "prompt_tokens_before_drain": {
+   "n": 144,
+   "median": 116111,
+   "p90": 118029,
+   "mean": 114512.306
+  }
+ },
+ "frontier": {
+  "game_runs": 20,
+  "game_hours": 19.12,
+  "new_levels": 1,
+  "runs": [
+   {
+    "draw": "l1",
+    "game": "dc22",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 57.8,
+    "model_actions": 70
+   },
+   {
+    "draw": "l1",
+    "game": "re86",
+    "library_levels": 6,
+    "levels": 6,
+    "new_levels": 0,
+    "frontier_minutes": 55.3,
+    "model_actions": 102
+   },
+   {
+    "draw": "l1",
+    "game": "s5i5",
+    "library_levels": 6,
+    "levels": 6,
+    "new_levels": 0,
+    "frontier_minutes": 57.3,
+    "model_actions": 20
+   },
+   {
+    "draw": "l1",
+    "game": "ls20",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.1,
+    "model_actions": 152
+   },
+   {
+    "draw": "l1",
+    "game": "bp35",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.7,
+    "model_actions": 74
+   },
+   {
+    "draw": "l2",
+    "game": "bp35",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.6,
+    "model_actions": 93
+   },
+   {
+    "draw": "l2",
+    "game": "re86",
+    "library_levels": 6,
+    "levels": 6,
+    "new_levels": 0,
+    "frontier_minutes": 54.4,
+    "model_actions": 64
+   },
+   {
+    "draw": "l2",
+    "game": "s5i5",
+    "library_levels": 6,
+    "levels": 7,
+    "new_levels": 1,
+    "frontier_minutes": 57.5,
+    "model_actions": 98
+   },
+   {
+    "draw": "l2",
+    "game": "dc22",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 57.7,
+    "model_actions": 110
+   },
+   {
+    "draw": "l2",
+    "game": "ls20",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.2,
+    "model_actions": 112
+   },
+   {
+    "draw": "l3",
+    "game": "s5i5",
+    "library_levels": 7,
+    "levels": 7,
+    "new_levels": 0,
+    "frontier_minutes": 56.8,
+    "model_actions": 65
+   },
+   {
+    "draw": "l3",
+    "game": "dc22",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 57.8,
+    "model_actions": 85
+   },
+   {
+    "draw": "l3",
+    "game": "re86",
+    "library_levels": 6,
+    "levels": 6,
+    "new_levels": 0,
+    "frontier_minutes": 54.9,
+    "model_actions": 126
+   },
+   {
+    "draw": "l3",
+    "game": "bp35",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.8,
+    "model_actions": 73
+   },
+   {
+    "draw": "l3",
+    "game": "ls20",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 57.8,
+    "model_actions": 167
+   },
+   {
+    "draw": "l4",
+    "game": "s5i5",
+    "library_levels": 7,
+    "levels": 7,
+    "new_levels": 0,
+    "frontier_minutes": 56.3,
+    "model_actions": 51
+   },
+   {
+    "draw": "l4",
+    "game": "dc22",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.1,
+    "model_actions": 97
+   },
+   {
+    "draw": "l4",
+    "game": "re86",
+    "library_levels": 6,
+    "levels": 6,
+    "new_levels": 0,
+    "frontier_minutes": 55.9,
+    "model_actions": 171
+   },
+   {
+    "draw": "l4",
+    "game": "bp35",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.9,
+    "model_actions": 88
+   },
+   {
+    "draw": "l4",
+    "game": "ls20",
+    "library_levels": 4,
+    "levels": 4,
+    "new_levels": 0,
+    "frontier_minutes": 58.0,
+    "model_actions": 163
+   }
+  ]
+ },
+ "s5i5_L7_chain": {
+  "l2_levels": 7,
+  "l2_actions_per_level": [
+   13,
+   26,
+   37,
+   33,
+   30,
+   26,
+   65,
+   33
+  ],
+  "v2_L7_actions": 61,
+  "v2_L7_best_draw": 65,
+  "l3": {
+   "levels": 7,
+   "replay_actions": 226,
+   "replay_tokens": 0
+  },
+  "l4": {
+   "levels": 7,
+   "replay_actions": 226,
+   "replay_tokens": 0
+  }
+ }
+}
