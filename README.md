@@ -33,4 +33,9 @@ sequence, the start-frame hash and the frame hash after every action.
 
 Linked Kaggle submissions: 56836939 (ECAOD v1) and 57877794 (failure note).
 
+Provenance: the paper files in `docs/paper/` are those of commit 41991aa2 (2026-11-07) of the private research
+repository, from which this release was cut; the tools, registrations and research outputs are copied unchanged
+from that commit. What is left out is listed in NOTICE.md; the equivalence checks for the five rewritten runtime
+files are described in runtime/README.md.
+
 Licence: MIT-0 (LICENSE). Citation: CITATION.cff (a request, not a licence condition).
