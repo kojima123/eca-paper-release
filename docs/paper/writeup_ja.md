@@ -4,8 +4,7 @@
 （Kaggle Writeup の日本語訳。提出するのは英語版 writeup.md）
 
 **紐づける提出：** ARC-AGI-3 提出 56836939（ECAOD v1、スコア 36.14）。57877794（失敗ノート版、30.68）も説明する。
-**PDF の公開状態（2026-11-08）：** Google Drive の 2 つの PDF は、現時点では閲覧にサインインが必要である（2026-11-08 確認）。公開前に共有設定を変更する。
-**論文全文（PDF、審査の本体）：** [英語版 PDF](https://drive.google.com/file/d/1iAwJUZqTP_ivILG_B07y07QIQ3t-7kWG/view?usp=drivesdk) · [日本語版 PDF](https://drive.google.com/file/d/1vZGRqVQasBtewwIW1eXxwb5quYPsVZt4/view?usp=drivesdk)
+**論文全文（PDF、審査の本体）：** [英語版 PDF](https://github.com/kojima123/eca-paper-release/blob/main/docs/paper/paper.pdf) · [日本語版 PDF](https://github.com/kojima123/eca-paper-release/blob/main/docs/paper/paper_ja.pdf)
 **コード：** [ECAOD v1 のノートブック](https://www.kaggle.com/code/kojimatech/franzen-m2-ecaod-submit-20261005) · [失敗ノート版のノートブック](https://www.kaggle.com/code/kojimatech/franzen-m2-failnote-s0-submit-20261101) · [ハーネスのパッチと実験記録](https://github.com/kojima123/eca-paper-release)（MIT-0）
 
 ## 問題

@@ -2,8 +2,7 @@
 ### Execution contracts and stop-record diagnostics for an LLM agent on ARC-AGI-3
 
 **Linked submission:** ARC-AGI-3 submission 56836939 (ECAOD v1, score 36.14). Also described: 57877794 (failure note, 30.68).
-**Full paper (PDF, main body):** [English PDF](https://drive.google.com/file/d/1iAwJUZqTP_ivILG_B07y07QIQ3t-7kWG/view?usp=drivesdk) · [Japanese translation](https://drive.google.com/file/d/1vZGRqVQasBtewwIW1eXxwb5quYPsVZt4/view?usp=drivesdk)
-**PDF access status (2026-11-08):** Both Google Drive copies still require sign-in (checked 2026-11-08). Anonymous access must be enabled before this writeup is published.
+**Full paper (PDF, main body):** [English PDF](https://github.com/kojima123/eca-paper-release/blob/main/docs/paper/paper.pdf) · [Japanese translation](https://github.com/kojima123/eca-paper-release/blob/main/docs/paper/paper_ja.pdf)
 **Code:** [ECAOD v1 notebook](https://www.kaggle.com/code/kojimatech/franzen-m2-ecaod-submit-20261005) · [failure-note notebook](https://www.kaggle.com/code/kojimatech/franzen-m2-failnote-s0-submit-20261101)
 **Research code and records:** [github.com/kojima123/eca-paper-release](https://github.com/kojima123/eca-paper-release) (MIT-0): the ECA toolbox, harness patches, analysis tools and experiment records; raw run outputs are excluded.
 
